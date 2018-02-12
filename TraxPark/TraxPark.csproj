@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ECBE5F2-FFA6-4D6F-93FD-0DB523E9E2BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TraxPark</RootNamespace>
+    <AssemblyName>TraxPark</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>caja.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Reporting.Extensions, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Microsoft Office\Office12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="tessnet2_64, Version=2.0.4.0, Culture=neutral, PublicKeyToken=1550524b5ba07e29, processorArchitecture=AMD64">
+      <HintPath>..\packages\tessnet2_64.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preview.designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Empresa.cs" />
+    <Compile Include="Support\Usuario.cs" />
+    <Compile Include="Web References\Srv_TraxPark\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\BusqEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\BusqEmpleados.Designer.cs">
+      <DependentUpon>BusqEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Encriptador.cs" />
+    <Compile Include="Support\Global.cs" />
+    <Compile Include="Windows\Man_Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Configuracion.Designer.cs">
+      <DependentUpon>Man_Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seguridad\Seg_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seguridad\Seg_Login.Designer.cs">
+      <DependentUpon>Seg_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seg_EstacionTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seg_EstacionTrabajo.Designer.cs">
+      <DependentUpon>Seg_EstacionTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Clientes.Designer.cs">
+      <DependentUpon>Man_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Conceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Conceptos.Designer.cs">
+      <DependentUpon>Man_Conceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Empresa.Designer.cs">
+      <DependentUpon>Man_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Equipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Equipos.Designer.cs">
+      <DependentUpon>Man_Equipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Series.Designer.cs">
+      <DependentUpon>Man_Series.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_TipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_TipoDocumento.Designer.cs">
+      <DependentUpon>Man_TipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Usuarios.Designer.cs">
+      <DependentUpon>Man_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Man_Excepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Man_Excepciones.Designer.cs">
+      <DependentUpon>Man_Excepciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seg_AbrirTranquera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seg_AbrirTranquera.Designer.cs">
+      <DependentUpon>Seg_AbrirTranquera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seg_MovimTranquera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seg_MovimTranquera.Designer.cs">
+      <DependentUpon>Seg_MovimTranquera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seg_PerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seg_PerfilUsuario.Designer.cs">
+      <DependentUpon>Seg_PerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Seg_TipoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Seg_TipoUsuario.Designer.cs">
+      <DependentUpon>Seg_TipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tar_TarifaGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Tar_TarifaGeneral.Designer.cs">
+      <DependentUpon>Tar_TarifaGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tar_TarifaSecundaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Tar_TarifaSecundaria.Designer.cs">
+      <DependentUpon>Tar_TarifaSecundaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Ven_Cobranza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Ven_Cobranza.Designer.cs">
+      <DependentUpon>Ven_Cobranza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Ven_CorteXZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Ven_CorteXZ.Designer.cs">
+      <DependentUpon>Ven_CorteXZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Ven_IngresosEgresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Ven_IngresosEgresos.Designer.cs">
+      <DependentUpon>Ven_IngresosEgresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm2.Designer.cs">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Windows\BusqEmpleados.resx">
+      <DependentUpon>BusqEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Configuracion.resx">
+      <DependentUpon>Man_Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seguridad\Seg_Login.resx">
+      <DependentUpon>Seg_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seg_EstacionTrabajo.resx">
+      <DependentUpon>Seg_EstacionTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Clientes.resx">
+      <DependentUpon>Man_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Conceptos.resx">
+      <DependentUpon>Man_Conceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Empresa.resx">
+      <DependentUpon>Man_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Equipos.resx">
+      <DependentUpon>Man_Equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Excepciones.resx">
+      <DependentUpon>Man_Excepciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Series.resx">
+      <DependentUpon>Man_Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_TipoDocumento.resx">
+      <DependentUpon>Man_TipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Man_Usuarios.resx">
+      <DependentUpon>Man_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seg_AbrirTranquera.resx">
+      <DependentUpon>Seg_AbrirTranquera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seg_MovimTranquera.resx">
+      <DependentUpon>Seg_MovimTranquera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seg_PerfilUsuario.resx">
+      <DependentUpon>Seg_PerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Seg_TipoUsuario.resx">
+      <DependentUpon>Seg_TipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Tar_TarifaGeneral.resx">
+      <DependentUpon>Tar_TarifaGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Tar_TarifaSecundaria.resx">
+      <DependentUpon>Tar_TarifaSecundaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Ven_Cobranza.resx">
+      <DependentUpon>Ven_Cobranza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Ven_CorteXZ.resx">
+      <DependentUpon>Ven_CorteXZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Ven_IngresosEgresos.resx">
+      <DependentUpon>Ven_IngresosEgresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm2.resx">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\Srv_TraxPark\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TablaConfiguracion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TablaEstacion.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TablaTarifa.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TablaTipoUsuario.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TablaUsuario.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Srv_TraxPark\TraxPark.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dataset\" />
+    <Folder Include="Reportes\Diseño\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="caja.ico" />
+    <Content Include="Images\btn_Cancelar.png" />
+    <Content Include="Images\btn_editar.png" />
+    <Content Include="Images\btn_eliminar.png" />
+    <Content Include="Images\btn_nuevo.png" />
+    <Content Include="Images\Buscar.png" />
+    <Content Include="Images\Derechos.png" />
+    <Content Include="Images\fondo.png" />
+    <Content Include="Images\ico-loading.gif" />
+    <Content Include="Images\linea-gris-0.png" />
+    <Content Include="Images\lock-icon.png" />
+    <Content Include="Images\lock.png" />
+    <Content Include="Images\Login2.png" />
+    <Content Include="Images\Login2DCG.png" />
+    <Content Include="Images\propietario.png" />
+    <Content Include="Images\TraxPark_logo.png" />
+    <None Include="Web References\Srv_TraxPark\TraxPark.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.26/ServicioTraxPark/TraxPark.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Srv_TraxPark\</RelPath>
+      <UpdateFromURL>http://192.168.1.26/ServicioTraxPark/TraxPark.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>TraxPark_Srv_TraxPark_DCGTEC</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

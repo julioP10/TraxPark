@@ -1,0 +1,14 @@
+Telerik.WinControls.UI.RadGroupBox, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadTextBox, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadPanel, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+Telerik.WinControls.UI.RadButton, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.RadThemeManager, Telerik.WinControls, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadLabel, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+Telerik.WinControls.UI.RadCheckBox, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadTextBoxControl, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+Telerik.WinControls.UI.RadDropDownList, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+DevExpress.XtraNavBar.NavBarControl, DevExpress.XtraNavBar.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+Telerik.WinControls.UI.RadDateTimePicker, Telerik.WinControls.UI, Version=2017.3.1017.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e
+DevExpress.Patch.InMemoryPatch, DevExpress.Patch.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7fc7bfca2443de66

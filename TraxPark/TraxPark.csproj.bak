@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ECBE5F2-FFA6-4D6F-93FD-0DB523E9E2BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZKExtended</RootNamespace>
+    <AssemblyName>ZkTime Enterprise Extended</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.68.1.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Persistent.Base.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Extensions, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Reporting.Extensions, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v13.1, Version=13.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2013.1.321.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dataset\dsReportesRimac.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReportesRimac.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.config\InterrupcionConfig.cs" />
+    <Compile Include="dcg.dao\CostesDao.cs" />
+    <Compile Include="dcg.dao\ImportaDao.cs" />
+    <Compile Include="dcg.dao\InterrupcionConfigDao.cs" />
+    <Compile Include="dcg.dao\InterrupcionDao.cs" />
+    <Compile Include="dcg.dao\ReporteDao.cs" />
+    <Compile Include="dcg.dao\ResponsableDao.cs" />
+    <Compile Include="dcg.dao\TurnoDao.cs" />
+    <Compile Include="dcg.entity\Interrupcion.cs" />
+    <Compile Include="dcg.entity\Responsable.cs" />
+    <Compile Include="dcg.entity\Turno.cs" />
+    <Compile Include="dcg.reports\rptComunAsistenciaPlanilla.cs" />
+    <Compile Include="dcg.reports\rptComunAsistenciaPlanilla.Designer.cs">
+      <DependentUpon>rptComunAsistenciaPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptDetalleDiarioConteo.cs" />
+    <Compile Include="dcg.reports\rptDetalleDiarioConteo.Designer.cs">
+      <DependentUpon>rptDetalleDiarioConteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptDetalleDiario_1.cs" />
+    <Compile Include="dcg.reports\rptDetalleDiario_1.Designer.cs">
+      <DependentUpon>rptDetalleDiario_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptConteoHorasBolsas.cs" />
+    <Compile Include="dcg.reports\rptConteoHorasBolsas.Designer.cs">
+      <DependentUpon>rptConteoHorasBolsas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptConteoIncidencia.cs" />
+    <Compile Include="dcg.reports\rptConteoIncidencia.Designer.cs">
+      <DependentUpon>rptConteoIncidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptIncideConsuProg.cs" />
+    <Compile Include="dcg.reports\rptIncideConsuProg.Designer.cs">
+      <DependentUpon>rptIncideConsuProg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptRecordAsistencia.cs" />
+    <Compile Include="dcg.reports\rptRecordAsistencia.Designer.cs">
+      <DependentUpon>rptRecordAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\rptRecordAsistenciaPorFechas.cs" />
+    <Compile Include="dcg.reports\rptRecordAsistenciaPorFechas.Designer.cs">
+      <DependentUpon>rptRecordAsistenciaPorFechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.reports\XtraReport1.cs" />
+    <Compile Include="dcg.reports\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.service\ConfigService.cs" />
+    <Compile Include="dcg.service\CostesService.cs" />
+    <Compile Include="dcg.service\ImportaService.cs" />
+    <Compile Include="dcg.service\InterrupcionService.cs" />
+    <Compile Include="dcg.service\ReporteService.cs" />
+    <Compile Include="dcg.window\report\frmRptExportaAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptExportaAsistencia.Designer.cs">
+      <DependentUpon>frmRptExportaAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptRecord.designer.cs">
+      <DependentUpon>frmRptRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptRecordFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptRecordFecha.designer.cs">
+      <DependentUpon>frmRptRecordFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\ResponsableService.cs" />
+    <Compile Include="dcg.service\TurnoService.cs" />
+    <Compile Include="dcg.window\frmConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmConexion.designer.cs">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.config\NisiraConfig.cs" />
+    <Compile Include="dcg.dao\CierreDao.cs" />
+    <Compile Include="dcg.dao\TareoDao.cs" />
+    <Compile Include="dcg.entity\Historico_Tareo.cs" />
+    <Compile Include="dcg.entity\Nisira.cs" />
+    <Compile Include="dcg.entity\Tareo.cs" />
+    <Compile Include="dcg.service\CierreService.cs" />
+    <Compile Include="dcg.service\NisiraService.cs" />
+    <Compile Include="dcg.service\TareoService.cs" />
+    <Compile Include="dcg.support\Archivo.cs" />
+    <Compile Include="dcg.support\GeneraExcel.cs" />
+    <Compile Include="dcg.support\IOFile.cs" />
+    <Compile Include="dcg.config\ScireConfig.cs" />
+    <Compile Include="dcg.dao\ConfigDao.cs" />
+    <Compile Include="dcg.dao\SuspensionDao.cs" />
+    <Compile Include="dcg.entity\Contasis.cs" />
+    <Compile Include="dcg.config\ContasisConfig.cs" />
+    <Compile Include="dcg.entity\Scire.cs" />
+    <Compile Include="dcg.service\SuspensionService.cs" />
+    <Compile Include="dcg.window\frmBusqEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmBusqEmpleados.Designer.cs">
+      <DependentUpon>frmBusqEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.support\Encriptador.cs" />
+    <Compile Include="dcg.support\Global.cs" />
+    <Compile Include="dcg.dao\ConexionDao.cs" />
+    <Compile Include="dcg.dao\EmpleadoDao.cs" />
+    <Compile Include="dcg.dao\EmpresaDao.cs" />
+    <Compile Include="dcg.dao\PlanillaDao.cs" />
+    <Compile Include="dcg.dao\UsuarioDao.cs" />
+    <Compile Include="dcg.entity\Empleado.cs" />
+    <Compile Include="dcg.entity\Empresa.cs" />
+    <Compile Include="dcg.entity\Usuario.cs" />
+    <Compile Include="dcg.service\ConexionService.cs" />
+    <Compile Include="dcg.service\EmpleadoService.cs" />
+    <Compile Include="dcg.service\EmpresaService.cs" />
+    <Compile Include="dcg.service\UsuarioService.cs" />
+    <Compile Include="dcg.window\frmCambiarUsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmCambiarUsu.Designer.cs">
+      <DependentUpon>frmCambiarUsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmEmpresa.Designer.cs">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmListadoTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmListadoTurno.designer.cs">
+      <DependentUpon>frmListadoTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmLogeo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmLogeo.Designer.cs">
+      <DependentUpon>frmLogeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmCargarTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmCargarTurno.Designer.cs">
+      <DependentUpon>frmCargarTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmConfigGuadHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmConfigGuadHospital.Designer.cs">
+      <DependentUpon>frmConfigGuadHospital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmPreview.Designer.cs">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\frmProgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\frmProgreso.Designer.cs">
+      <DependentUpon>frmProgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptDetalleConteo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptDetalleConteo.Designer.cs">
+      <DependentUpon>frmRptDetalleConteo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptIncProgEjec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptIncProgEjec.designer.cs">
+      <DependentUpon>frmRptIncProgEjec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptConteoIncidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptConteoIncidencia.designer.cs">
+      <DependentUpon>frmRptConteoIncidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptConteoHora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptConteoHora.designer.cs">
+      <DependentUpon>frmRptConteoHora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dcg.window\report\frmRptDetalle.designer.cs">
+      <DependentUpon>frmRptDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ZkHMCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZkHMCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZkHMCDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZkHMCDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZKMuniRimacDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZKMuniRimacDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZK_ESEP_20140407DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZK_ESEP_20140407DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZK_ESEP_20140407DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZK_ESEP_20140407DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZK_ESEP_20140407DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZK_ESEP_20140407DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZK_ESEP_20140407DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZK_ESEP_20140407DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ZK_ESEP_20140407DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ZK_ESEP_20140407DataSet4.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="dcg.reports\rptComunAsistenciaPlanilla.resx">
+      <DependentUpon>rptComunAsistenciaPlanilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptConteoHorasBolsas.resx">
+      <DependentUpon>rptConteoHorasBolsas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptConteoIncidencia.resx">
+      <DependentUpon>rptConteoIncidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptDetalleDiarioConteo.resx">
+      <DependentUpon>rptDetalleDiarioConteo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptDetalleDiario_1.resx">
+      <DependentUpon>rptDetalleDiario_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptIncideConsuPRog.resx">
+      <DependentUpon>rptIncideConsuProg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptRecordAsistencia.resx">
+      <DependentUpon>rptRecordAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\rptRecordAsistenciaPorFechas.resx">
+      <DependentUpon>rptRecordAsistenciaPorFechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.reports\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmConexion.resx">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmBusqEmpleados.resx">
+      <DependentUpon>frmBusqEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmCambiarUsu.resx">
+      <DependentUpon>frmCambiarUsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmListadoTurno.resx">
+      <DependentUpon>frmListadoTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmLogeo.resx">
+      <DependentUpon>frmLogeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmCargarTurno.resx">
+      <DependentUpon>frmCargarTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmConfigGuadHospital.resx">
+      <DependentUpon>frmConfigGuadHospital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmPreview.resx">
+      <DependentUpon>frmPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\frmProgreso.resx">
+      <DependentUpon>frmProgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptDetalleConteo.resx">
+      <DependentUpon>frmRptDetalleConteo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptExportaAsistencia.resx">
+      <DependentUpon>frmRptExportaAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptIncProgEjec.resx">
+      <DependentUpon>frmRptIncProgEjec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptConteoIncidencia.resx">
+      <DependentUpon>frmRptConteoIncidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptConteoHora.resx">
+      <DependentUpon>frmRptConteoHora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptDetalle.resx">
+      <DependentUpon>frmRptDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptRecord.resx">
+      <DependentUpon>frmRptRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dcg.window\report\frmRptRecordFecha.resx">
+      <DependentUpon>frmRptRecordFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Dataset\dsReportesRimac.xsc">
+      <DependentUpon>dsReportesRimac.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsReportesRimac.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReportesRimac.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsReportesRimac.xss">
+      <DependentUpon>dsReportesRimac.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ZkHMCDataSet.xsc">
+      <DependentUpon>ZkHMCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZkHMCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZkHMCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZkHMCDataSet.xss">
+      <DependentUpon>ZkHMCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZkHMCDataSet1.xsc">
+      <DependentUpon>ZkHMCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZkHMCDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZkHMCDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZkHMCDataSet1.xss">
+      <DependentUpon>ZkHMCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZKMuniRimacDataSet.xsc">
+      <DependentUpon>ZKMuniRimacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZKMuniRimacDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZKMuniRimacDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZKMuniRimacDataSet.xss">
+      <DependentUpon>ZKMuniRimacDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet.xsc">
+      <DependentUpon>ZK_ESEP_20140407DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZK_ESEP_20140407DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet.xss">
+      <DependentUpon>ZK_ESEP_20140407DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet1.xsc">
+      <DependentUpon>ZK_ESEP_20140407DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZK_ESEP_20140407DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet1.xss">
+      <DependentUpon>ZK_ESEP_20140407DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet2.xsc">
+      <DependentUpon>ZK_ESEP_20140407DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZK_ESEP_20140407DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet2.xss">
+      <DependentUpon>ZK_ESEP_20140407DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet3.xsc">
+      <DependentUpon>ZK_ESEP_20140407DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZK_ESEP_20140407DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet3.xss">
+      <DependentUpon>ZK_ESEP_20140407DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet4.xsc">
+      <DependentUpon>ZK_ESEP_20140407DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ZK_ESEP_20140407DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ZK_ESEP_20140407DataSet4.xss">
+      <DependentUpon>ZK_ESEP_20140407DataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo%29.ico" />
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

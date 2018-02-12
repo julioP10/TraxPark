@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/WebService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/WebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicio TraxPark</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/WebService">
+      <s:element name="Man_Configuracion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdConfiguracion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sede" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ubicacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Capacidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TarifaDefecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TarifaCambio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_ConfiguracionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Man_ConfiguracionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_Estacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NroAutorizacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NroMaquinaReg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PiePagina" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Impresora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Excepcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerieBoleta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerieFactura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_EstacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Man_EstacionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_TipoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_TipoUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Man_TipoUsuarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_Perfil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdPerfil" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Formulario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Accion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_PerfilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Man_PerfilResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contraseña" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Man_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Man_UsuarioResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_Configuracion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdConfiguracion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RUC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sede" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ubicacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Capacidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TarifaDefecto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TarifaCambio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_ConfiguracionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traer_ConfiguracionResult" type="tns:ArrayOfTablaConfiguracion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTablaConfiguracion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TablaConfiguracion" nillable="true" type="tns:TablaConfiguracion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TablaConfiguracion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RUC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sede" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ubicacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Capacidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TarifaDefecto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TarifaCambio" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Traer_Estacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NroAutorizacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NroMaquinaReg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PiePagina" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Impresora" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Excepcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerieBoleta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerieFactura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_EstacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traer_EstacionResult" type="tns:ArrayOfTablaEstacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTablaEstacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TablaEstacion" nillable="true" type="tns:TablaEstacion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TablaEstacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroAutorizacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NroMaquinaReg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Producto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PiePagina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Impresora" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Excepcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerieBoleta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerieFactura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Traer_TipoUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_TipoUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traer_TipoUsuarioResult" type="tns:ArrayOfTablaTipoUsuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTablaTipoUsuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TablaTipoUsuario" nillable="true" type="tns:TablaTipoUsuario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TablaTipoUsuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Traer_Usuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contraseña" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_UsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traer_UsuarioResult" type="tns:ArrayOfTablaUsuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTablaUsuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TablaUsuario" nillable="true" type="tns:TablaUsuario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TablaUsuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contraseña" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoUsuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Empresa" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Traer_Tarifa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdTarifa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Monto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tiempo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToleranciaEntrada" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToleranciaSalida" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MontoAdicional" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Editable" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Imprimir" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TipoTarifa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ActivarTolerancia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Traer_TarifaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Traer_TarifaResult" type="tns:ArrayOfTablaTarifa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTablaTarifa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TablaTarifa" nillable="true" type="tns:TablaTarifa" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TablaTarifa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Monto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tiempo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToleranciaEntrada" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToleranciaSalida" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MontoAdicional" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Editable" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Imprimir" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoTarifa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivarTolerancia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LOGIN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Contraseña" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdTipoUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdEstado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IdUsu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Opcion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LOGINResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LOGINResult" type="tns:ArrayOfTablaUsuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Man_ConfiguracionSoapIn">
+    <wsdl:part name="parameters" element="tns:Man_Configuracion" />
+  </wsdl:message>
+  <wsdl:message name="Man_ConfiguracionSoapOut">
+    <wsdl:part name="parameters" element="tns:Man_ConfiguracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Man_EstacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Man_Estacion" />
+  </wsdl:message>
+  <wsdl:message name="Man_EstacionSoapOut">
+    <wsdl:part name="parameters" element="tns:Man_EstacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Man_TipoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Man_TipoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Man_TipoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Man_TipoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Man_PerfilSoapIn">
+    <wsdl:part name="parameters" element="tns:Man_Perfil" />
+  </wsdl:message>
+  <wsdl:message name="Man_PerfilSoapOut">
+    <wsdl:part name="parameters" element="tns:Man_PerfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="Man_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Man_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Man_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Man_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Traer_ConfiguracionSoapIn">
+    <wsdl:part name="parameters" element="tns:Traer_Configuracion" />
+  </wsdl:message>
+  <wsdl:message name="Traer_ConfiguracionSoapOut">
+    <wsdl:part name="parameters" element="tns:Traer_ConfiguracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Traer_EstacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Traer_Estacion" />
+  </wsdl:message>
+  <wsdl:message name="Traer_EstacionSoapOut">
+    <wsdl:part name="parameters" element="tns:Traer_EstacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Traer_TipoUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Traer_TipoUsuario" />
+  </wsdl:message>
+  <wsdl:message name="Traer_TipoUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Traer_TipoUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Traer_UsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:Traer_Usuario" />
+  </wsdl:message>
+  <wsdl:message name="Traer_UsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:Traer_UsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Traer_TarifaSoapIn">
+    <wsdl:part name="parameters" element="tns:Traer_Tarifa" />
+  </wsdl:message>
+  <wsdl:message name="Traer_TarifaSoapOut">
+    <wsdl:part name="parameters" element="tns:Traer_TarifaResponse" />
+  </wsdl:message>
+  <wsdl:message name="LOGINSoapIn">
+    <wsdl:part name="parameters" element="tns:LOGIN" />
+  </wsdl:message>
+  <wsdl:message name="LOGINSoapOut">
+    <wsdl:part name="parameters" element="tns:LOGINResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DCGTECSoap">
+    <wsdl:operation name="Man_Configuracion">
+      <wsdl:input message="tns:Man_ConfiguracionSoapIn" />
+      <wsdl:output message="tns:Man_ConfiguracionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Man_Estacion">
+      <wsdl:input message="tns:Man_EstacionSoapIn" />
+      <wsdl:output message="tns:Man_EstacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Man_TipoUsuario">
+      <wsdl:input message="tns:Man_TipoUsuarioSoapIn" />
+      <wsdl:output message="tns:Man_TipoUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Man_Perfil">
+      <wsdl:input message="tns:Man_PerfilSoapIn" />
+      <wsdl:output message="tns:Man_PerfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Man_Usuario">
+      <wsdl:input message="tns:Man_UsuarioSoapIn" />
+      <wsdl:output message="tns:Man_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Configuracion">
+      <wsdl:input message="tns:Traer_ConfiguracionSoapIn" />
+      <wsdl:output message="tns:Traer_ConfiguracionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Estacion">
+      <wsdl:input message="tns:Traer_EstacionSoapIn" />
+      <wsdl:output message="tns:Traer_EstacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traer_TipoUsuario">
+      <wsdl:input message="tns:Traer_TipoUsuarioSoapIn" />
+      <wsdl:output message="tns:Traer_TipoUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Usuario">
+      <wsdl:input message="tns:Traer_UsuarioSoapIn" />
+      <wsdl:output message="tns:Traer_UsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Tarifa">
+      <wsdl:input message="tns:Traer_TarifaSoapIn" />
+      <wsdl:output message="tns:Traer_TarifaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <wsdl:input message="tns:LOGINSoapIn" />
+      <wsdl:output message="tns:LOGINSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DCGTECSoap" type="tns:DCGTECSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Man_Configuracion">
+      <soap:operation soapAction="http://localhost/WebService/Man_Configuracion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Estacion">
+      <soap:operation soapAction="http://localhost/WebService/Man_Estacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_TipoUsuario">
+      <soap:operation soapAction="http://localhost/WebService/Man_TipoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Perfil">
+      <soap:operation soapAction="http://localhost/WebService/Man_Perfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Usuario">
+      <soap:operation soapAction="http://localhost/WebService/Man_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Configuracion">
+      <soap:operation soapAction="http://localhost/WebService/Traer_Configuracion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Estacion">
+      <soap:operation soapAction="http://localhost/WebService/Traer_Estacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_TipoUsuario">
+      <soap:operation soapAction="http://localhost/WebService/Traer_TipoUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Usuario">
+      <soap:operation soapAction="http://localhost/WebService/Traer_Usuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Tarifa">
+      <soap:operation soapAction="http://localhost/WebService/Traer_Tarifa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <soap:operation soapAction="http://localhost/WebService/LOGIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DCGTECSoap12" type="tns:DCGTECSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Man_Configuracion">
+      <soap12:operation soapAction="http://localhost/WebService/Man_Configuracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Estacion">
+      <soap12:operation soapAction="http://localhost/WebService/Man_Estacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_TipoUsuario">
+      <soap12:operation soapAction="http://localhost/WebService/Man_TipoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Perfil">
+      <soap12:operation soapAction="http://localhost/WebService/Man_Perfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Man_Usuario">
+      <soap12:operation soapAction="http://localhost/WebService/Man_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Configuracion">
+      <soap12:operation soapAction="http://localhost/WebService/Traer_Configuracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Estacion">
+      <soap12:operation soapAction="http://localhost/WebService/Traer_Estacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_TipoUsuario">
+      <soap12:operation soapAction="http://localhost/WebService/Traer_TipoUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Usuario">
+      <soap12:operation soapAction="http://localhost/WebService/Traer_Usuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Traer_Tarifa">
+      <soap12:operation soapAction="http://localhost/WebService/Traer_Tarifa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LOGIN">
+      <soap12:operation soapAction="http://localhost/WebService/LOGIN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DCGTEC">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Servicio TraxPark</wsdl:documentation>
+    <wsdl:port name="DCGTECSoap" binding="tns:DCGTECSoap">
+      <soap:address location="http://192.168.1.26/ServicioTraxPark/TraxPark.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DCGTECSoap12" binding="tns:DCGTECSoap12">
+      <soap12:address location="http://192.168.1.26/ServicioTraxPark/TraxPark.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
