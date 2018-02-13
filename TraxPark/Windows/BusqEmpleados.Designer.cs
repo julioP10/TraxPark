@@ -122,6 +122,7 @@
             this.Name = "BusqEmpleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda de Empleados";
+            this.Load += new System.EventHandler(this.BusqEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();

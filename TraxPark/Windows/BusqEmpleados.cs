@@ -28,5 +28,10 @@ namespace TraxPark.Windows
             this.DialogResult = DialogResult.Yes;
             this.Close();
         }
+
+        private void BusqEmpleados_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("HOLA");
+        }
     }
 }
