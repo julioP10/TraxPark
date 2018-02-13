@@ -285,6 +285,7 @@
             this.Controls.Add(this.nbcOpciones);
             this.Name = "Man_Equipos";
             this.Text = "Man_Equipos";
+            this.Load += new System.EventHandler(this.Man_Equipos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();

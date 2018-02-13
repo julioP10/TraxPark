@@ -52,6 +52,11 @@ namespace TraxPark.Windows
             this.Close();
         }
 
+        private void Man_Equipos_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(":D");
+        }
+
         
     }
 }
