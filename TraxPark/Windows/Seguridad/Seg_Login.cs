@@ -54,8 +54,8 @@ namespace TraxPark.Windows.Seguridad
 
         private void Seg_Login_Load(object sender, EventArgs e)
         {
-            string Dia = Convert.ToString(DateTime.Today.ToString("dddd"));
-            string Mes = Convert.ToString(DateTime.Now.ToString("MMMM"));
+           // string Dia = Convert.ToString(DateTime.Today.ToString("dddd"));
+          //string Mes = Convert.ToString(DateTime.Now.ToString("MMMM"));
 
            // LblFecha.Text = PrimeraLetraMayúscula(Dia) + " " + DateTime.Now.Day + " de " + PrimeraLetraMayúscula(Mes) + " del " + DateTime.Now.Year;
         }
