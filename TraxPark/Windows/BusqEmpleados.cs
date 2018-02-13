@@ -17,7 +17,7 @@ namespace TraxPark.Windows
        {
             if (txtPalabra.Text.Length > 1)
             {
-                
+                MessageBox.Show("sd","sdsds");
             }
         }
 
