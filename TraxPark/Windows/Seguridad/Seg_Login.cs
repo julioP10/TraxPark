@@ -57,7 +57,7 @@ namespace TraxPark.Windows.Seguridad
             string Dia = Convert.ToString(DateTime.Today.ToString("dddd"));
             string Mes = Convert.ToString(DateTime.Now.ToString("MMMM"));
 
-            LblFecha.Text = PrimeraLetraMayúscula(Dia) + " " + DateTime.Now.Day + " de " + PrimeraLetraMayúscula(Mes) + " del " + DateTime.Now.Year;
+           // LblFecha.Text = PrimeraLetraMayúscula(Dia) + " " + DateTime.Now.Day + " de " + PrimeraLetraMayúscula(Mes) + " del " + DateTime.Now.Year;
         }
 
 
