@@ -48,9 +48,9 @@ namespace TraxPark.Windows
                 var Tar = Servicio.Traer_Tarifa(null, null, null, null, null, null, null, null, null, null, null, "1", null, null, "4");
                 if (Tar.Length > 0)
                 {
-                    rddlTarDef.DataSource = Tar;
-                    rddlTarDef.ValueMember = "Id";
-                    rddlTarDef.DisplayMember = "Descripcion";
+                    //rddlTarDef.DataSource = Tar;
+                    //rddlTarDef.ValueMember = "Id";
+                    //rddlTarDef.DisplayMember = "Descripcion";
                 }
                 LlenarcbTarifaCam();
                 LlenarComboCam = 1;
@@ -65,13 +65,13 @@ namespace TraxPark.Windows
         {
             try
             {
-                var Tar = Servicio.Traer_Tarifa(rddlTarDef.SelectedValue.ToString(), null, null, null, null, null, null, null, null, null, null, "1", null, null, "5");
-                if (Tar.Length > 0)
-                {
-                    rddlTarCam.DataSource = Tar;
-                    rddlTarCam.ValueMember = "Id";
-                    rddlTarCam.DisplayMember = "Descripcion";
-                }
+                //var Tar = Servicio.Traer_Tarifa(rddlTarDef.SelectedValue.ToString(), null, null, null, null, null, null, null, null, null, null, "1", null, null, "5");
+                //if (Tar.Length > 0)
+                //{
+                //    rddlTarCam.DataSource = Tar;
+                //    rddlTarCam.ValueMember = "Id";
+                //    rddlTarCam.DisplayMember = "Descripcion";
+                //}
             }
             catch (Exception ex)
             {
@@ -90,11 +90,11 @@ namespace TraxPark.Windows
                     TxtRuc.Text = Conf[0].RUC;
                     txtRazonSocial.Text = Conf[0].RazonSocial;
                     txtDireccion.Text = Conf[0].Direccion;
-                    txtSede.Text = Conf[0].Sede;
-                    txtUbicacion.Text = Conf[0].Ubicacion;
-                    txtCapacidad.Text = Conf[0].Capacidad;
-                    rddlTarDef.SelectedValue = Conf[0].TarifaDefecto.ToString();
-                    rddlTarCam.SelectedValue = Conf[0].TarifaCambio.ToString();
+                    //txtSede.Text = Conf[0].Sede;
+                    //txtUbicacion.Text = Conf[0].Ubicacion;
+                    //txtCapacidad.Text = Conf[0].Capacidad;
+                    //rddlTarDef.SelectedValue = Conf[0].TarifaDefecto.ToString();
+                    //rddlTarCam.SelectedValue = Conf[0].TarifaCambio.ToString();
                 }
             }
             catch (Exception ex)
@@ -158,19 +158,19 @@ namespace TraxPark.Windows
                 }
                 else epError.SetError(txtDireccion, "");
 
-                if (txtSede.Text.Trim().Equals(""))
-                {
-                    epError.SetError(txtSede, "Campo Obligatorio");
-                    return;
-                }
-                else epError.SetError(txtSede, "");
+                //if (txtSede.Text.Trim().Equals(""))
+                //{
+                //    epError.SetError(txtSede, "Campo Obligatorio");
+                //    return;
+                //}
+                //else epError.SetError(txtSede, "");
 
-                if (txtUbicacion.Text.Trim().Equals(""))
-                {
-                    epError.SetError(txtUbicacion, "Campo Obligatorio");
-                    return;
-                }
-                else epError.SetError(txtUbicacion, "");
+                //if (txtUbicacion.Text.Trim().Equals(""))
+                //{
+                //    epError.SetError(txtUbicacion, "Campo Obligatorio");
+                //    return;
+                //}
+                //else epError.SetError(txtUbicacion, "");
 
                 if (txtCapacidad.Text.Trim().Equals(""))
                 {
@@ -181,15 +181,15 @@ namespace TraxPark.Windows
 
                 if (lblID.Text.Equals(""))
                 {
-                    Servicio.Man_Configuracion(null,TxtRuc.Text,txtRazonSocial.Text,txtDireccion.Text,txtSede.Text,txtUbicacion.Text,txtCapacidad.Text,rddlTarDef.SelectedValue.ToString(),rddlTarCam.SelectedValue.ToString(),null,IP,"1");
-                    XtraMessageBox.Show("SE GUARDÓ CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    DialogResult = System.Windows.Forms.DialogResult.OK;
+                    //Servicio.Man_Configuracion(null,TxtRuc.Text,txtRazonSocial.Text,txtDireccion.Text,txtSede.Text,txtUbicacion.Text,txtCapacidad.Text,rddlTarDef.SelectedValue.ToString(),rddlTarCam.SelectedValue.ToString(),null,IP,"1");
+                    //XtraMessageBox.Show("SE GUARDÓ CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //DialogResult = System.Windows.Forms.DialogResult.OK;
                     return;
                 }
                 else
                 {
-                    Servicio.Man_Configuracion(lblID.Text, TxtRuc.Text, txtRazonSocial.Text, txtDireccion.Text, txtSede.Text, txtUbicacion.Text, txtCapacidad.Text, rddlTarDef.SelectedValue.ToString(), rddlTarCam.SelectedValue.ToString(), null, IP, "2");
-                    XtraMessageBox.Show("SE ACTUALIZÓ CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //Servicio.Man_Configuracion(lblID.Text, TxtRuc.Text, txtRazonSocial.Text, txtDireccion.Text, txtSede.Text, txtUbicacion.Text, txtCapacidad.Text, rddlTarDef.SelectedValue.ToString(), rddlTarCam.SelectedValue.ToString(), null, IP, "2");
+                    //XtraMessageBox.Show("SE ACTUALIZÓ CORRECTAMENTE", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 LlenarcbTarifaDef();
                 LlenarConfiguracion();
