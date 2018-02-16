@@ -44,15 +44,11 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.rdtpFechaInicial = new Telerik.WinControls.UI.RadDateTimePicker();
             this.rdtpFechaFinal = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.txtRazonSocial = new Telerik.WinControls.UI.RadTextBox();
-            this.txtDireccion = new Telerik.WinControls.UI.RadTextBox();
-            this.txtTiempoContratado = new Telerik.WinControls.UI.RadTextBox();
-            this.txtTiempoConsumido = new Telerik.WinControls.UI.RadTextBox();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.ceContratarTiempo = new Telerik.WinControls.UI.RadCheckBox();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.TxtRuc = new Telerik.WinControls.UI.RadTextBox();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
             this.gcEmpresa = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -72,16 +68,17 @@
             this.sbEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.sbModificar = new DevExpress.XtraEditors.SimpleButton();
             this.object_4672ec09_19ae_4c6c_b890_21a807846c97 = new Telerik.WinControls.RootRadElement();
-            this.ceContratarTiempo = new Telerik.WinControls.UI.RadCheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaInicial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaFinal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoContratado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoConsumido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtRuc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).BeginInit();
@@ -94,7 +91,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).BeginInit();
             this.nbcOpciones.SuspendLayout();
             this.navBarGroupControlContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -266,7 +268,7 @@
             this.rdtpFechaInicial.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdtpFechaInicial.Location = new System.Drawing.Point(165, 196);
             this.rdtpFechaInicial.Name = "rdtpFechaInicial";
-            this.rdtpFechaInicial.Size = new System.Drawing.Size(317, 20);
+            this.rdtpFechaInicial.Size = new System.Drawing.Size(144, 20);
             this.rdtpFechaInicial.TabIndex = 6;
             this.rdtpFechaInicial.TabStop = false;
             this.rdtpFechaInicial.Text = "viernes, 05 de enero de 2018";
@@ -279,91 +281,56 @@
             this.rdtpFechaFinal.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdtpFechaFinal.Location = new System.Drawing.Point(165, 226);
             this.rdtpFechaFinal.Name = "rdtpFechaFinal";
-            this.rdtpFechaFinal.Size = new System.Drawing.Size(317, 20);
+            this.rdtpFechaFinal.Size = new System.Drawing.Size(144, 20);
             this.rdtpFechaFinal.TabIndex = 7;
             this.rdtpFechaFinal.TabStop = false;
             this.rdtpFechaFinal.Text = "viernes, 05 de enero de 2018";
             this.rdtpFechaFinal.Value = new System.DateTime(2018, 1, 5, 13, 17, 29, 87);
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRazonSocial.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazonSocial.Location = new System.Drawing.Point(165, 55);
-            this.txtRazonSocial.MaxLength = 20;
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(315, 20);
-            this.txtRazonSocial.TabIndex = 1;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDireccion.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(165, 84);
-            this.txtDireccion.MaxLength = 20;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(316, 20);
-            this.txtDireccion.TabIndex = 2;
-            // 
-            // txtTiempoContratado
-            // 
-            this.txtTiempoContratado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTiempoContratado.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoContratado.Location = new System.Drawing.Point(165, 138);
-            this.txtTiempoContratado.Name = "txtTiempoContratado";
-            this.txtTiempoContratado.Size = new System.Drawing.Size(124, 20);
-            this.txtTiempoContratado.TabIndex = 4;
-            this.txtTiempoContratado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTiempoContratado_KeyPress);
-            // 
-            // txtTiempoConsumido
-            // 
-            this.txtTiempoConsumido.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTiempoConsumido.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempoConsumido.Location = new System.Drawing.Point(165, 167);
-            this.txtTiempoConsumido.Name = "txtTiempoConsumido";
-            this.txtTiempoConsumido.Size = new System.Drawing.Size(124, 20);
-            this.txtTiempoConsumido.TabIndex = 5;
-            this.txtTiempoConsumido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTiempoConsumido_KeyPress);
             // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.radGroupBox1.Controls.Add(this.textEdit5);
+            this.radGroupBox1.Controls.Add(this.textEdit4);
+            this.radGroupBox1.Controls.Add(this.textEdit3);
+            this.radGroupBox1.Controls.Add(this.textEdit2);
+            this.radGroupBox1.Controls.Add(this.textEdit1);
             this.radGroupBox1.Controls.Add(this.ceContratarTiempo);
             this.radGroupBox1.Controls.Add(this.labelControl11);
             this.radGroupBox1.Controls.Add(this.labelControl10);
             this.radGroupBox1.Controls.Add(this.simpleButton5);
-            this.radGroupBox1.Controls.Add(this.TxtRuc);
             this.radGroupBox1.Controls.Add(this.labelControl4);
-            this.radGroupBox1.Controls.Add(this.txtTiempoConsumido);
             this.radGroupBox1.Controls.Add(this.labelControl3);
             this.radGroupBox1.Controls.Add(this.labelControl9);
-            this.radGroupBox1.Controls.Add(this.txtTiempoContratado);
             this.radGroupBox1.Controls.Add(this.labelControl5);
-            this.radGroupBox1.Controls.Add(this.txtDireccion);
             this.radGroupBox1.Controls.Add(this.labelControl6);
             this.radGroupBox1.Controls.Add(this.labelControl1);
-            this.radGroupBox1.Controls.Add(this.txtRazonSocial);
             this.radGroupBox1.Controls.Add(this.rdtpFechaInicial);
             this.radGroupBox1.Controls.Add(this.labelControl2);
             this.radGroupBox1.Controls.Add(this.rdtpFechaFinal);
             this.radGroupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radGroupBox1.HeaderText = "Datos de la Empresa";
-            this.radGroupBox1.Location = new System.Drawing.Point(19, 10);
+            this.radGroupBox1.Location = new System.Drawing.Point(12, 6);
             this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(510, 265);
+            this.radGroupBox1.Size = new System.Drawing.Size(337, 265);
             this.radGroupBox1.TabIndex = 0;
             this.radGroupBox1.Text = "Datos de la Empresa";
+            // 
+            // ceContratarTiempo
+            // 
+            this.ceContratarTiempo.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ceContratarTiempo.Location = new System.Drawing.Point(165, 114);
+            this.ceContratarTiempo.Name = "ceContratarTiempo";
+            this.ceContratarTiempo.Size = new System.Drawing.Size(140, 18);
+            this.ceContratarTiempo.TabIndex = 24;
+            this.ceContratarTiempo.Text = "CONTRATAR TIEMPO";
             // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(305, 170);
+            this.labelControl11.Location = new System.Drawing.Point(287, 163);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(45, 17);
             this.labelControl11.TabIndex = 23;
@@ -372,7 +339,7 @@
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(305, 141);
+            this.labelControl10.Location = new System.Drawing.Point(286, 134);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(45, 17);
             this.labelControl10.TabIndex = 22;
@@ -396,21 +363,8 @@
             this.simpleButton5.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(435, 21);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(41, 28);
+            this.simpleButton5.Size = new System.Drawing.Size(0, 28);
             this.simpleButton5.TabIndex = 5;
-            // 
-            // TxtRuc
-            // 
-            this.TxtRuc.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRuc.Location = new System.Drawing.Point(165, 27);
-            this.TxtRuc.Name = "TxtRuc";
-            this.TxtRuc.Size = new System.Drawing.Size(253, 20);
-            this.TxtRuc.TabIndex = 0;
-            this.TxtRuc.Enter += new System.EventHandler(this.TxtRuc_Enter);
-            this.TxtRuc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtRuc_KeyPress);
-            this.TxtRuc.Leave += new System.EventHandler(this.TxtRuc_Leave);
-            ((Telerik.WinControls.UI.RadTextBoxItem)(this.TxtRuc.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            ((Telerik.WinControls.UI.RadTextBoxItem)(this.TxtRuc.GetChildAt(0).GetChildAt(0))).Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // radGroupBox3
             // 
@@ -422,15 +376,16 @@
             this.radGroupBox3.HeaderText = "";
             this.radGroupBox3.Location = new System.Drawing.Point(16, 534);
             this.radGroupBox3.Name = "radGroupBox3";
-            this.radGroupBox3.Size = new System.Drawing.Size(514, 28);
+            this.radGroupBox3.Size = new System.Drawing.Size(785, 28);
             this.radGroupBox3.TabIndex = 26;
             // 
             // gcEmpresa
             // 
-            this.gcEmpresa.Location = new System.Drawing.Point(18, 286);
+            this.gcEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gcEmpresa.Location = new System.Drawing.Point(0, 0);
             this.gcEmpresa.MainView = this.gridView1;
             this.gcEmpresa.Name = "gcEmpresa";
-            this.gcEmpresa.Size = new System.Drawing.Size(512, 237);
+            this.gcEmpresa.Size = new System.Drawing.Size(448, 575);
             this.gcEmpresa.TabIndex = 2;
             this.gcEmpresa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -515,14 +470,14 @@
             // 
             // radPanel1
             // 
+            this.radPanel1.Controls.Add(this.panel1);
             this.radPanel1.Controls.Add(this.nbcOpciones);
-            this.radPanel1.Controls.Add(this.radGroupBox1);
             this.radPanel1.Controls.Add(this.gcEmpresa);
             this.radPanel1.Controls.Add(this.radGroupBox3);
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(708, 575);
+            this.radPanel1.Size = new System.Drawing.Size(979, 575);
             this.radPanel1.TabIndex = 0;
             this.radPanel1.UseCompatibleTextRendering = false;
             // 
@@ -530,9 +485,10 @@
             // 
             this.nbcOpciones.ActiveGroup = this.navBarGroup1;
             this.nbcOpciones.Controls.Add(this.navBarGroupControlContainer2);
+            this.nbcOpciones.Dock = System.Windows.Forms.DockStyle.Right;
             this.nbcOpciones.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.nbcOpciones.Location = new System.Drawing.Point(547, 0);
+            this.nbcOpciones.Location = new System.Drawing.Point(819, 0);
             this.nbcOpciones.Name = "nbcOpciones";
             this.nbcOpciones.NavigationPaneGroupClientHeight = 320;
             this.nbcOpciones.OptionsNavPane.ExpandedWidth = 160;
@@ -656,20 +612,54 @@
             this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchHorizontally = true;
             this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchVertically = true;
             // 
-            // ceContratarTiempo
+            // panel1
             // 
-            this.ceContratarTiempo.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ceContratarTiempo.Location = new System.Drawing.Point(202, 110);
-            this.ceContratarTiempo.Name = "ceContratarTiempo";
-            this.ceContratarTiempo.Size = new System.Drawing.Size(140, 18);
-            this.ceContratarTiempo.TabIndex = 24;
-            this.ceContratarTiempo.Text = "CONTRATAR TIEMPO";
+            this.panel1.Controls.Add(this.radGroupBox1);
+            this.panel1.Location = new System.Drawing.Point(454, 9);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(361, 477);
+            this.panel1.TabIndex = 27;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(165, 24);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(144, 20);
+            this.textEdit1.TabIndex = 1;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(165, 50);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(144, 20);
+            this.textEdit2.TabIndex = 25;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(165, 81);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(144, 20);
+            this.textEdit3.TabIndex = 26;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(161, 136);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Size = new System.Drawing.Size(120, 20);
+            this.textEdit4.TabIndex = 27;
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Location = new System.Drawing.Point(161, 166);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Size = new System.Drawing.Size(120, 20);
+            this.textEdit5.TabIndex = 28;
             // 
             // Man_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 575);
+            this.ClientSize = new System.Drawing.Size(979, 575);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.navBarControl1);
             this.MaximizeBox = false;
@@ -680,14 +670,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaInicial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaFinal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoContratado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoConsumido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtRuc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
             this.radGroupBox3.PerformLayout();
@@ -701,7 +687,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).EndInit();
             this.nbcOpciones.ResumeLayout(false);
             this.navBarGroupControlContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -723,10 +714,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private Telerik.WinControls.UI.RadDateTimePicker rdtpFechaInicial;
         private Telerik.WinControls.UI.RadDateTimePicker rdtpFechaFinal;
-        private Telerik.WinControls.UI.RadTextBox txtRazonSocial;
-        private Telerik.WinControls.UI.RadTextBox txtDireccion;
-        private Telerik.WinControls.UI.RadTextBox txtTiempoContratado;
-        private Telerik.WinControls.UI.RadTextBox txtTiempoConsumido;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
         private DevExpress.XtraGrid.GridControl gcEmpresa;
@@ -739,7 +726,6 @@
         private DevExpress.XtraNavBar.NavBarGroup nbgMail;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private Telerik.WinControls.UI.RadPanel radPanel1;
-        private Telerik.WinControls.UI.RadTextBox TxtRuc;
         private Telerik.WinControls.RootRadElement object_4672ec09_19ae_4c6c_b890_21a807846c97;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraNavBar.NavBarControl nbcOpciones;
@@ -752,5 +738,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private Telerik.WinControls.UI.RadCheckBox ceContratarTiempo;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
