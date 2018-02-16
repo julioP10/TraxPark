@@ -30,8 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            this.barAndDockingController1 = new DevExpress.XtraBars.BarAndDockingController(this.components);
             this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
+            this.dashboardViewer1 = new DevExpress.DashboardWin.DashboardViewer(this.components);
             this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
             this.alignButtonGroup = new DevExpress.XtraBars.BarButtonGroup();
             this.rbBtnGenera = new DevExpress.XtraBars.BarButtonItem();
@@ -54,6 +56,13 @@
             this.rbBtnGestEmp = new DevExpress.XtraBars.BarButtonItem();
             this.bbParamSist = new DevExpress.XtraBars.BarButtonItem();
             this.bbEstacion = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem47 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup8 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
+            this.barMdiChildrenListItem1 = new DevExpress.XtraBars.BarMdiChildrenListItem();
+            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
+            this.barButtonGroup9 = new DevExpress.XtraBars.BarButtonGroup();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.ribPagConfig = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -178,12 +187,24 @@
             this.barButtonItem46 = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.desertTheme1 = new Telerik.WinControls.Themes.DesertTheme();
+            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardViewer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // barAndDockingController1
+            // 
+            this.barAndDockingController1.PropertiesBar.AllowLinkLighting = false;
+            this.barAndDockingController1.PropertiesBar.DefaultGlyphSize = new System.Drawing.Size(16, 16);
+            this.barAndDockingController1.PropertiesBar.DefaultLargeGlyphSize = new System.Drawing.Size(32, 32);
             // 
             // appMenu
             // 
@@ -193,10 +214,11 @@
             // 
             // ribbonControl
             // 
-            this.ribbonControl.ApplicationButtonDropDownControl = this.appMenu;
+            this.ribbonControl.ApplicationButtonDropDownControl = this.dashboardViewer1;
             this.ribbonControl.ApplicationButtonText = null;
             this.ribbonControl.ApplicationIcon = ((System.Drawing.Bitmap)(resources.GetObject("ribbonControl.ApplicationIcon")));
             this.ribbonControl.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Orange;
+            this.ribbonControl.Controller = this.barAndDockingController1;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Images = this.ribbonImageCollection;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
@@ -221,21 +243,36 @@
             this.bsiUsuario,
             this.rbBtnGestEmp,
             this.bbParamSist,
-            this.bbEstacion});
+            this.bbEstacion,
+            this.barButtonItem47,
+            this.barButtonGroup8,
+            this.barButtonItem48,
+            this.barSubItem1,
+            this.barMdiChildrenListItem1,
+            this.barSubItem2,
+            this.barButtonGroup9});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 86;
+            this.ribbonControl.MaxItemId = 93;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribPagConfig,
             this.ribPagConex,
             this.ribPagVentana});
-            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2007;
-            this.ribbonControl.Size = new System.Drawing.Size(1096, 146);
+            this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
+            this.ribbonControl.Size = new System.Drawing.Size(1364, 184);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.Toolbar.ItemLinks.Add(this.barButtonItem1);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
+            // 
+            // dashboardViewer1
+            // 
+            this.dashboardViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboardViewer1.Location = new System.Drawing.Point(0, 184);
+            this.dashboardViewer1.Name = "dashboardViewer1";
+            this.dashboardViewer1.Size = new System.Drawing.Size(1364, 568);
+            this.dashboardViewer1.TabIndex = 3;
             // 
             // ribbonImageCollection
             // 
@@ -278,6 +315,8 @@
             this.ribbonImageCollection.Images.SetKeyName(35, "calendar_date (3).png");
             this.ribbonImageCollection.Images.SetKeyName(36, "calendar_add.png");
             this.ribbonImageCollection.Images.SetKeyName(37, "calendar_date (4).png");
+            this.ribbonImageCollection.Images.SetKeyName(38, "ajustes.png");
+            this.ribbonImageCollection.Images.SetKeyName(45, "Workstation_96px.png");
             // 
             // alignButtonGroup
             // 
@@ -309,7 +348,7 @@
             // 
             this.rbBtnEmpresa.Caption = "Cambiar Empresa";
             this.rbBtnEmpresa.Id = 67;
-            this.rbBtnEmpresa.LargeImageIndex = 12;
+            this.rbBtnEmpresa.LargeImageIndex = 6;
             this.rbBtnEmpresa.Name = "rbBtnEmpresa";
             this.rbBtnEmpresa.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
@@ -317,14 +356,15 @@
             // 
             this.rbBtnUsuario.Caption = "Cambiar Usuario";
             this.rbBtnUsuario.Id = 68;
-            this.rbBtnUsuario.LargeImageIndex = 17;
+            this.rbBtnUsuario.LargeImageIndex = 11;
             this.rbBtnUsuario.Name = "rbBtnUsuario";
             // 
             // rbBtnGestUsu
             // 
+            this.rbBtnGestUsu.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.rbBtnGestUsu.Caption = "Gestion Usuarios";
             this.rbBtnGestUsu.Id = 69;
-            this.rbBtnGestUsu.LargeImageIndex = 13;
+            this.rbBtnGestUsu.LargeImageIndex = 5;
             this.rbBtnGestUsu.Name = "rbBtnGestUsu";
             // 
             // rbBtnSalir
@@ -351,9 +391,11 @@
             // rbBtnCascada
             // 
             this.rbBtnCascada.Caption = "Cascada";
+            this.rbBtnCascada.Glyph = global::TraxPark.Properties.Resources.ordenador;
             this.rbBtnCascada.Id = 73;
             this.rbBtnCascada.LargeImageIndex = 21;
             this.rbBtnCascada.Name = "rbBtnCascada";
+            this.rbBtnCascada.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // rbBtnVertical
             // 
@@ -407,62 +449,101 @@
             this.rbBtnGestEmp.Caption = "Gestion Empresa";
             this.rbBtnGestEmp.Id = 83;
             this.rbBtnGestEmp.ImageIndex = 30;
-            this.rbBtnGestEmp.LargeImageIndex = 12;
+            this.rbBtnGestEmp.LargeImageIndex = 7;
             this.rbBtnGestEmp.Name = "rbBtnGestEmp";
             this.rbBtnGestEmp.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rbBtnGestEmp_ItemClick);
             // 
             // bbParamSist
             // 
+            this.bbParamSist.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.bbParamSist.Caption = "Parametros del Sistema";
+            this.bbParamSist.Glyph = global::TraxPark.Properties.Resources.ordenador;
+            this.bbParamSist.GlyphDisabled = global::TraxPark.Properties.Resources.ordenador;
             this.bbParamSist.Id = 84;
-            this.bbParamSist.LargeImageIndex = 9;
+            this.bbParamSist.ImageIndex = 45;
+            this.bbParamSist.LargeImageIndex = 10;
             this.bbParamSist.Name = "bbParamSist";
             this.bbParamSist.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbParamSist_ItemClick);
             // 
             // bbEstacion
             // 
+            this.bbEstacion.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.bbEstacion.Caption = "Estacion de Trabajo";
             this.bbEstacion.Id = 85;
-            this.bbEstacion.LargeImageIndex = 10;
+            this.bbEstacion.LargeImageIndex = 9;
             this.bbEstacion.Name = "bbEstacion";
             this.bbEstacion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbEstacion_ItemClick);
+            // 
+            // barButtonItem47
+            // 
+            this.barButtonItem47.Caption = "barButtonItem47";
+            this.barButtonItem47.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonItem47.Id = 86;
+            this.barButtonItem47.Name = "barButtonItem47";
+            // 
+            // barButtonGroup8
+            // 
+            this.barButtonGroup8.Caption = "barButtonGroup8";
+            this.barButtonGroup8.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.barButtonGroup8.Id = 87;
+            this.barButtonGroup8.Name = "barButtonGroup8";
+            // 
+            // barButtonItem48
+            // 
+            this.barButtonItem48.Caption = "barButtonItem48";
+            this.barButtonItem48.Id = 88;
+            this.barButtonItem48.Name = "barButtonItem48";
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "barSubItem1";
+            this.barSubItem1.Id = 89;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // barMdiChildrenListItem1
+            // 
+            this.barMdiChildrenListItem1.Caption = "barMdiChildrenListItem1";
+            this.barMdiChildrenListItem1.Id = 90;
+            this.barMdiChildrenListItem1.Name = "barMdiChildrenListItem1";
+            // 
+            // barSubItem2
+            // 
+            this.barSubItem2.Caption = "barSubItem2";
+            this.barSubItem2.Id = 91;
+            this.barSubItem2.Name = "barSubItem2";
+            // 
+            // barButtonGroup9
+            // 
+            this.barButtonGroup9.Caption = "barButtonGroup9";
+            this.barButtonGroup9.Id = 92;
+            this.barButtonGroup9.Name = "barButtonGroup9";
             // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
             this.ribbonImageCollectionLarge.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("ribbonImageCollectionLarge.ImageStream")));
-            this.ribbonImageCollectionLarge.Images.SetKeyName(0, "Ribbon_New_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(1, "Ribbon_Open_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(2, "Ribbon_Close_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(3, "Ribbon_Find_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(4, "Ribbon_Save_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(5, "Ribbon_SaveAs_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(6, "Ribbon_Exit_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(7, "Ribbon_Content_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(8, "Ribbon_Info_32x32.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(9, "computer_process (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(10, "process (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(11, "text_document.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(12, "home (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(13, "users (3).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(14, "database_process.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(15, "database_delete (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(16, "note_book_process.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(17, "business_user_unlock.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(18, "application (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(19, "application (3).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(20, "application.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(21, "applications (2).png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(22, "application_remove.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(23, "application_add.png");
-            this.ribbonImageCollectionLarge.Images.SetKeyName(24, "invoice.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(0, "ajustes.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(1, "carro-de-la-compra.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(2, "Contacts_32px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(3, "devolucion-de-dinero.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(4, "icons8_Team_96px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(5, "icons8_User_Account_80px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(6, "oficina.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(7, "paisaje-urbano.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(8, "User_50px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(9, "Work_96px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(10, "Workstation_96px.png");
+            this.ribbonImageCollectionLarge.Images.SetKeyName(11, "actualizar-perfil-de-usuario.png");
             // 
             // ribPagConfig
             // 
+            this.ribPagConfig.Appearance.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F);
+            this.ribPagConfig.Appearance.Options.UseFont = true;
             this.ribPagConfig.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup21,
             this.ribbonPageGroup1,
             this.ConfigPageGroup});
+            this.ribPagConfig.Image = global::TraxPark.Properties.Resources.ajustes;
             this.ribPagConfig.Name = "ribPagConfig";
             this.ribPagConfig.Text = "Configuracion";
             // 
@@ -489,8 +570,17 @@
             // 
             // ribPagConex
             // 
+            this.ribPagConex.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ribPagConex.Appearance.BackColor2 = System.Drawing.Color.Aqua;
+            this.ribPagConex.Appearance.BorderColor = System.Drawing.Color.Teal;
+            this.ribPagConex.Appearance.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribPagConex.Appearance.Options.UseBackColor = true;
+            this.ribPagConex.Appearance.Options.UseBorderColor = true;
+            this.ribPagConex.Appearance.Options.UseFont = true;
             this.ribPagConex.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2});
+            this.ribPagConex.Image = global::TraxPark.Properties.Resources.devolucion_de_dinero;
+            this.ribPagConex.ImageIndex = 23;
             this.ribPagConex.Name = "ribPagConex";
             this.ribPagConex.Text = "Punto de Venta";
             // 
@@ -503,6 +593,8 @@
             // 
             // ribPagVentana
             // 
+            this.ribPagVentana.Appearance.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 9F);
+            this.ribPagVentana.Appearance.Options.UseFont = true;
             this.ribPagVentana.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
             this.ribbonPageGroup4});
@@ -529,10 +621,10 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.bsiEmpresa);
             this.ribbonStatusBar.ItemLinks.Add(this.bsiUsuario);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 661);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 752);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1096, 27);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1364, 27);
             // 
             // lbarEmpresa
             // 
@@ -586,6 +678,7 @@
             this.imageCollection1.Images.SetKeyName(5, "invoice.png");
             this.imageCollection1.Images.SetKeyName(6, "money_24.png");
             this.imageCollection1.Images.SetKeyName(7, "Calendar_24x24.png");
+            this.imageCollection1.Images.SetKeyName(8, "ajustes.png");
             // 
             // alertMensaje
             // 
@@ -1530,12 +1623,28 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
+            // popupMenu1
+            // 
+            this.popupMenu1.Name = "popupMenu1";
+            this.popupMenu1.Ribbon = this.ribbonControl;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(171, 218);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 7;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Principal
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 688);
+            this.ClientSize = new System.Drawing.Size(1364, 779);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dashboardViewer1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1547,11 +1656,14 @@
             this.Text = "TraxPark";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardViewer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1701,11 +1813,23 @@
         public DevExpress.XtraBars.Ribbon.RibbonPage ribPagConfig;
         public DevExpress.XtraBars.Ribbon.RibbonPage ribPagConex;
         public DevExpress.XtraBars.Ribbon.RibbonPage ribPagVentana;
-        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraBars.BarButtonItem rbBtnGestEmp;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
         private DevExpress.XtraBars.BarButtonItem bbParamSist;
         private DevExpress.XtraBars.BarButtonItem bbEstacion;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem47;
+        private DevExpress.XtraBars.BarButtonGroup barButtonGroup8;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem48;
+        private DevExpress.XtraBars.BarSubItem barSubItem1;
+        private DevExpress.XtraBars.BarMdiChildrenListItem barMdiChildrenListItem1;
+        private DevExpress.XtraBars.PopupMenu popupMenu1;
+        private DevExpress.DashboardWin.DashboardViewer dashboardViewer1;
+        private DevExpress.XtraBars.BarSubItem barSubItem2;
+        private DevExpress.XtraBars.BarButtonGroup barButtonGroup9;
+        private DevExpress.XtraBars.BarAndDockingController barAndDockingController1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private Telerik.WinControls.Themes.DesertTheme desertTheme1;
 
     }
 }

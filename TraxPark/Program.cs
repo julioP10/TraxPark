@@ -11,6 +11,7 @@ using TraxPark.Windows;
 using TraxPark.Srv_TraxPark;
 using DevExpress.XtraEditors;
 using TraxPark.Windows.Seguridad;
+using Telerik.WinControls;
 
 namespace TraxPark
 {
@@ -26,13 +27,16 @@ namespace TraxPark
             Application.SetCompatibleTextRenderingDefault(false);
             SkinManager.EnableFormSkins();
             BonusSkins.Register();
-            UserLookAndFeel.Default.SetSkinStyle("Foggy");
 
+            ThemeResolutionService.ApplicationThemeName = "Desert";
+            //DevExpress.UserSkins.BonusSkins.Register();
+            //DevExpress.Skins.SkinManager.EnableFormSkins();
             int Iniciar = 0;
-            DCGTEC Servicio = new DCGTEC();
-
+            //DCGTEC Servicio = new DCGTEC();
             try
+
             {
+
                 //var Conf = Servicio.Traer_Configuracion(null, null, null, null, null, null, null, null, null, null, null, "4");
                 //if (Conf.Length == 0)
                 //{
@@ -78,15 +82,16 @@ namespace TraxPark
                 //    }
                 //}
 
-                if (Iniciar == 0)
-                {
-                    using (Seg_Login Login = new Seg_Login())
-                    {
-                        if (Login.ShowDialog() == DialogResult.OK) Application.Run(new Principal());
-                        else Application.Exit();
-                    }
-                }
-                else Application.Exit();
+                //if (Iniciar == 0)
+                //{
+                //    using (Seg_Login Login = new Seg_Login())
+                //    {
+                //        if (Login.ShowDialog() == DialogResult.OK) Application.Run(new Principal());
+                //        else Application.Exit();
+                //    }
+                //}
+                //else Application.Exit();
+                Application.Run(new Principal());
             }
             catch (Exception ex)
             {

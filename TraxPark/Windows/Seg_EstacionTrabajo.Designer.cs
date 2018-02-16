@@ -87,7 +87,7 @@
             this.txtDescripcion.Location = new System.Drawing.Point(158, 21);
             this.txtDescripcion.MaxLength = 50;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(178, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(194, 20);
             this.txtDescripcion.TabIndex = 0;
             // 
             // txtNroAutenticacion
@@ -97,7 +97,7 @@
             this.txtNroAutenticacion.Location = new System.Drawing.Point(158, 47);
             this.txtNroAutenticacion.MaxLength = 20;
             this.txtNroAutenticacion.Name = "txtNroAutenticacion";
-            this.txtNroAutenticacion.Size = new System.Drawing.Size(178, 20);
+            this.txtNroAutenticacion.Size = new System.Drawing.Size(194, 20);
             this.txtNroAutenticacion.TabIndex = 1;
             this.txtNroAutenticacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNroAutenticacion_KeyPress);
             // 
@@ -108,7 +108,7 @@
             this.txtNroMaqRegistradora.Location = new System.Drawing.Point(158, 73);
             this.txtNroMaqRegistradora.MaxLength = 20;
             this.txtNroMaqRegistradora.Name = "txtNroMaqRegistradora";
-            this.txtNroMaqRegistradora.Size = new System.Drawing.Size(178, 20);
+            this.txtNroMaqRegistradora.Size = new System.Drawing.Size(194, 20);
             this.txtNroMaqRegistradora.TabIndex = 2;
             // 
             // gcEstacionTrabajo
@@ -118,7 +118,7 @@
             this.gcEstacionTrabajo.Location = new System.Drawing.Point(12, 294);
             this.gcEstacionTrabajo.MainView = this.gvEstacionTrabajo;
             this.gcEstacionTrabajo.Name = "gcEstacionTrabajo";
-            this.gcEstacionTrabajo.Size = new System.Drawing.Size(371, 227);
+            this.gcEstacionTrabajo.Size = new System.Drawing.Size(387, 227);
             this.gcEstacionTrabajo.TabIndex = 1;
             this.gcEstacionTrabajo.TabStop = false;
             this.gcEstacionTrabajo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -161,7 +161,7 @@
             this.radGroupBox1.HeaderText = "Datos de la Estación";
             this.radGroupBox1.Location = new System.Drawing.Point(12, 12);
             this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(371, 276);
+            this.radGroupBox1.Size = new System.Drawing.Size(387, 276);
             this.radGroupBox1.TabIndex = 0;
             this.radGroupBox1.Text = "Datos de la Estación";
             // 
@@ -180,7 +180,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rddlImpresora.Location = new System.Drawing.Point(158, 151);
             this.rddlImpresora.Name = "rddlImpresora";
-            this.rddlImpresora.Size = new System.Drawing.Size(178, 20);
+            this.rddlImpresora.Size = new System.Drawing.Size(194, 20);
             this.rddlImpresora.TabIndex = 5;
             ((Telerik.WinControls.UI.RadDropDownTextBoxElement)(this.rddlImpresora.GetChildAt(0).GetChildAt(2).GetChildAt(0).GetChildAt(0))).EnableElementShadow = true;
             ((Telerik.WinControls.UI.RadDropDownTextBoxElement)(this.rddlImpresora.GetChildAt(0).GetChildAt(2).GetChildAt(0).GetChildAt(0))).Enabled = true;
@@ -283,7 +283,7 @@
             this.txtSerieFactura.Location = new System.Drawing.Point(158, 203);
             this.txtSerieFactura.MaxLength = 4;
             this.txtSerieFactura.Name = "txtSerieFactura";
-            this.txtSerieFactura.Size = new System.Drawing.Size(178, 20);
+            this.txtSerieFactura.Size = new System.Drawing.Size(194, 20);
             this.txtSerieFactura.TabIndex = 7;
             // 
             // txtSerieBoleta
@@ -293,7 +293,7 @@
             this.txtSerieBoleta.Location = new System.Drawing.Point(158, 177);
             this.txtSerieBoleta.MaxLength = 4;
             this.txtSerieBoleta.Name = "txtSerieBoleta";
-            this.txtSerieBoleta.Size = new System.Drawing.Size(178, 20);
+            this.txtSerieBoleta.Size = new System.Drawing.Size(194, 20);
             this.txtSerieBoleta.TabIndex = 6;
             // 
             // txtPiePagina
@@ -303,7 +303,7 @@
             this.txtPiePagina.Location = new System.Drawing.Point(158, 125);
             this.txtPiePagina.MaxLength = 100;
             this.txtPiePagina.Name = "txtPiePagina";
-            this.txtPiePagina.Size = new System.Drawing.Size(178, 20);
+            this.txtPiePagina.Size = new System.Drawing.Size(194, 20);
             this.txtPiePagina.TabIndex = 4;
             // 
             // txtProducto
@@ -313,7 +313,7 @@
             this.txtProducto.Location = new System.Drawing.Point(158, 99);
             this.txtProducto.MaxLength = 50;
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(178, 20);
+            this.txtProducto.Size = new System.Drawing.Size(194, 20);
             this.txtProducto.TabIndex = 3;
             // 
             // nbcOpciones
@@ -323,11 +323,11 @@
             this.nbcOpciones.Dock = System.Windows.Forms.DockStyle.Right;
             this.nbcOpciones.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.nbgMail});
-            this.nbcOpciones.Location = new System.Drawing.Point(389, 0);
+            this.nbcOpciones.Location = new System.Drawing.Point(405, 0);
             this.nbcOpciones.Name = "nbcOpciones";
             this.nbcOpciones.NavigationPaneGroupClientHeight = 320;
             this.nbcOpciones.OptionsNavPane.ExpandedWidth = 160;
-            this.nbcOpciones.Size = new System.Drawing.Size(160, 533);
+            this.nbcOpciones.Size = new System.Drawing.Size(160, 567);
             this.nbcOpciones.TabIndex = 1;
             this.nbcOpciones.TabStop = true;
             this.nbcOpciones.Text = "navBarControl1";
@@ -351,7 +351,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.sbEliminar);
             this.navBarGroupControlContainer1.Controls.Add(this.sbModificar);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(156, 431);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(156, 465);
             this.navBarGroupControlContainer1.TabIndex = 1;
             this.navBarGroupControlContainer1.TabStop = true;
             // 
@@ -445,17 +445,17 @@
             this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.radPanel1.Location = new System.Drawing.Point(0, 0);
             this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(389, 533);
+            this.radPanel1.Size = new System.Drawing.Size(405, 567);
             this.radPanel1.TabIndex = 0;
             // 
             // Seg_EstacionTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 533);
+            this.ClientSize = new System.Drawing.Size(565, 567);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.nbcOpciones);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(565, 572);
             this.MinimizeBox = false;

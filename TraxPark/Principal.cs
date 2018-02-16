@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using System.Linq;
 using System.Data;
 using TraxPark.Windows;
+using DevExpress.Skins;
+
 
 namespace TraxPark
 {
@@ -21,6 +23,12 @@ namespace TraxPark
             //bsiEmpresa.Caption = "Empresa : " + "DCGTEC";
             //bsiUsuario.Caption = "Usuario : " + DatosUsuario.Rows[0][1];
             //this.Refresh();
+            
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("Glass Oceans");
+            foreach (SkinContainer cn in SkinManager.Default.Skins)
+            {
+                comboBox1.Items.Add(cn.SkinName);
+            }
         }
 
         private void bbParamSist_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -39,6 +47,16 @@ namespace TraxPark
         {
             Man_Empresa.DefInstance.MdiParent = this;
              Man_Empresa.DefInstance.Show();
+        }
+
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(comboBox1.Text);
         }
     }
 }
