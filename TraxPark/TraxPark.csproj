@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -241,17 +241,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimationMode.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Preview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Preview.designer.cs">
       <DependentUpon>Preview.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Principal2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal2.Designer.cs">
-      <DependentUpon>Principal2.cs</DependentUpon>
     </Compile>
     <Compile Include="PrintRibbonControllerResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -419,11 +419,11 @@
     <Compile Include="XtraForm2.Designer.cs">
       <DependentUpon>XtraForm2.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Preview.resx">
       <DependentUpon>Preview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Principal2.resx">
-      <DependentUpon>Principal2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrintRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -577,6 +577,33 @@
     <Content Include="Images\Login2DCG.png" />
     <Content Include="Images\propietario.png" />
     <Content Include="Images\TraxPark_logo.png" />
+    <None Include="Resources\contenedor-de-reciclaje1.png" />
+    <None Include="Resources\Workstation_96px1.png" />
+    <None Include="Resources\Work_96px1.png" />
+    <None Include="Resources\User_50px1.png" />
+    <None Include="Resources\TraxPark_logo.png" />
+    <None Include="Resources\paisaje-urbano1.png" />
+    <None Include="Resources\oficina1.png" />
+    <None Include="Resources\mas2.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\lupa1.png" />
+    <None Include="Resources\icons8_User_Account_80px1.png" />
+    <None Include="Resources\icons8_Team_96px1.png" />
+    <None Include="Resources\contrato1.png" />
+    <None Include="Resources\contenedor-de-reciclaje.png" />
+    <None Include="Resources\Contacts_32px1.png" />
+    <None Include="Resources\carro-de-la-compra2.png" />
+    <None Include="Resources\busqueda-de-usuario1.png" />
+    <None Include="Resources\buscar %281%291.png" />
+    <None Include="Resources\base-de-datos.png" />
+    <None Include="Resources\base-de-datos %281%29.png" />
+    <None Include="Resources\ajustes3.png" />
+    <None Include="Resources\actualizar-perfil-de-usuario1.png" />
+    <None Include="Resources\contrato.png" />
+    <None Include="Resources\busqueda-de-usuario.png" />
+    <None Include="Resources\buscar %281%29.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\carro-de-la-compra1.png" />
     <None Include="Resources\Workstation_96px.png" />
     <None Include="Resources\Work_96px.png" />
     <None Include="Resources\User_50px.png" />
@@ -592,7 +619,6 @@
     <None Include="Resources\actualizar-perfil-de-usuario.png" />
     <None Include="Resources\ordenador.png" />
     <None Include="Resources\devolucion-de-dinero.png" />
-    <None Include="Resources\ajustes1.png" />
     <None Include="Resources\ajustes.png" />
     <None Include="Resources\LogoDCGtec.png" />
     <None Include="Web References\Srv_TraxPark\TraxPark.disco" />

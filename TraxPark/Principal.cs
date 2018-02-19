@@ -5,6 +5,7 @@ using System.Linq;
 using System.Data;
 using TraxPark.Windows;
 using DevExpress.Skins;
+using System.Drawing;
 
 
 namespace TraxPark
@@ -29,6 +30,17 @@ namespace TraxPark
             {
                 comboBox1.Items.Add(cn.SkinName);
             }
+            MdiClient mdiCliente;
+            foreach (Control mdi in this.Controls)
+            {
+                try
+                {
+                    mdiCliente = (MdiClient)mdi;
+                    mdiCliente.BackColor = this.BackColor;
+                }
+                catch{}
+            }
+            
         }
 
         private void bbParamSist_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

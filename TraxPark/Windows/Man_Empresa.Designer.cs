@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Man_Empresa));
             this.object_4672ec09_19ae_4c6c_b890_21a807846c97 = new Telerik.WinControls.RootRadElement();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -40,11 +40,11 @@
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.txtRuc = new DevExpress.XtraEditors.TextEdit();
+            this.txtRazonSocial = new DevExpress.XtraEditors.TextEdit();
+            this.txtDireccion = new DevExpress.XtraEditors.TextEdit();
+            this.txtTiempoContratado = new DevExpress.XtraEditors.TextEdit();
+            this.txtTiempoConsumido = new DevExpress.XtraEditors.TextEdit();
             this.gcEmpresa = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -55,6 +55,8 @@
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.d_FechaFinal = new DevExpress.XtraEditors.DateEdit();
+            this.d_FechaInicial = new DevExpress.XtraEditors.DateEdit();
             this.button1 = new System.Windows.Forms.Button();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.nbcOpciones = new DevExpress.XtraNavBar.NavBarControl();
@@ -65,27 +67,25 @@
             this.sbEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.sbModificar = new DevExpress.XtraEditors.SimpleButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.d_FechaInicial = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRuc.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoContratado.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoConsumido.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaFinal.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaFinal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).BeginInit();
             this.nbcOpciones.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // object_4672ec09_19ae_4c6c_b890_21a807846c97
@@ -184,52 +184,52 @@
             this.labelControl11.Text = "minutos";
             this.labelControl11.Click += new System.EventHandler(this.labelControl11_Click);
             // 
-            // textEdit1
+            // txtRuc
             // 
-            this.textEdit1.Location = new System.Drawing.Point(196, 49);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(143, 20);
-            this.textEdit1.TabIndex = 1;
-            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            this.txtRuc.Location = new System.Drawing.Point(196, 49);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(143, 20);
+            this.txtRuc.TabIndex = 1;
+            this.txtRuc.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
-            // textEdit2
+            // txtRazonSocial
             // 
-            this.textEdit2.Location = new System.Drawing.Point(196, 75);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(196, 20);
-            this.textEdit2.TabIndex = 25;
-            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
+            this.txtRazonSocial.Location = new System.Drawing.Point(196, 75);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(196, 20);
+            this.txtRazonSocial.TabIndex = 25;
+            this.txtRazonSocial.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
-            // textEdit3
+            // txtDireccion
             // 
-            this.textEdit3.Location = new System.Drawing.Point(196, 106);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(195, 20);
-            this.textEdit3.TabIndex = 26;
-            this.textEdit3.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
+            this.txtDireccion.Location = new System.Drawing.Point(196, 106);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(195, 20);
+            this.txtDireccion.TabIndex = 26;
+            this.txtDireccion.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
-            // textEdit4
+            // txtTiempoContratado
             // 
-            this.textEdit4.Location = new System.Drawing.Point(196, 165);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(143, 20);
-            this.textEdit4.TabIndex = 27;
-            this.textEdit4.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
+            this.txtTiempoContratado.Location = new System.Drawing.Point(196, 165);
+            this.txtTiempoContratado.Name = "txtTiempoContratado";
+            this.txtTiempoContratado.Size = new System.Drawing.Size(143, 20);
+            this.txtTiempoContratado.TabIndex = 27;
+            this.txtTiempoContratado.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
             // 
-            // textEdit5
+            // txtTiempoConsumido
             // 
-            this.textEdit5.Location = new System.Drawing.Point(197, 191);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(142, 20);
-            this.textEdit5.TabIndex = 28;
-            this.textEdit5.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
+            this.txtTiempoConsumido.Location = new System.Drawing.Point(197, 191);
+            this.txtTiempoConsumido.Name = "txtTiempoConsumido";
+            this.txtTiempoConsumido.Size = new System.Drawing.Size(142, 20);
+            this.txtTiempoConsumido.TabIndex = 28;
+            this.txtTiempoConsumido.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
             // 
             // gcEmpresa
             // 
             this.gcEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
-            gridLevelNode2.RelationName = "Level1";
+            gridLevelNode1.RelationName = "Level1";
             this.gcEmpresa.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
-            gridLevelNode2});
+            gridLevelNode1});
             this.gcEmpresa.Location = new System.Drawing.Point(0, 0);
             this.gcEmpresa.MainView = this.gridView1;
             this.gcEmpresa.Name = "gcEmpresa";
@@ -287,9 +287,9 @@
             this.radGroupBox3.Controls.Add(this.labelControl7);
             this.radGroupBox3.Controls.Add(this.labelControl8);
             this.radGroupBox3.HeaderText = "";
-            this.radGroupBox3.Location = new System.Drawing.Point(62, 377);
+            this.radGroupBox3.Location = new System.Drawing.Point(57, 346);
             this.radGroupBox3.Name = "radGroupBox3";
-            this.radGroupBox3.Size = new System.Drawing.Size(352, 28);
+            this.radGroupBox3.Size = new System.Drawing.Size(333, 28);
             this.radGroupBox3.TabIndex = 26;
             this.radGroupBox3.Click += new System.EventHandler(this.radGroupBox3_Click);
             // 
@@ -316,30 +316,58 @@
             this.groupControl1.Appearance.BorderColor = System.Drawing.Color.Black;
             this.groupControl1.Appearance.Options.UseBorderColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.groupControl1.Controls.Add(this.dateEdit2);
+            this.groupControl1.Controls.Add(this.d_FechaFinal);
             this.groupControl1.Controls.Add(this.d_FechaInicial);
             this.groupControl1.Controls.Add(this.button1);
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.txtTiempoConsumido);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.txtTiempoContratado);
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.radGroupBox3);
             this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.txtDireccion);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.txtRazonSocial);
             this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.txtRuc);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Location = new System.Drawing.Point(4, 0);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(452, 456);
             this.groupControl1.TabIndex = 30;
             this.groupControl1.Text = "Datos";
+            // 
+            // d_FechaFinal
+            // 
+            this.d_FechaFinal.EditValue = null;
+            this.d_FechaFinal.Location = new System.Drawing.Point(197, 250);
+            this.d_FechaFinal.Name = "d_FechaFinal";
+            this.d_FechaFinal.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaFinal.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaFinal.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.d_FechaFinal.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
+            this.d_FechaFinal.Size = new System.Drawing.Size(193, 20);
+            this.d_FechaFinal.TabIndex = 33;
+            // 
+            // d_FechaInicial
+            // 
+            this.d_FechaInicial.EditValue = null;
+            this.d_FechaInicial.Location = new System.Drawing.Point(197, 220);
+            this.d_FechaInicial.Name = "d_FechaInicial";
+            this.d_FechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaInicial.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaInicial.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.d_FechaInicial.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
+            this.d_FechaInicial.Size = new System.Drawing.Size(193, 20);
+            this.d_FechaInicial.TabIndex = 32;
             // 
             // button1
             // 
@@ -419,7 +447,7 @@
             this.sbNuevo.Appearance.Options.UseForeColor = true;
             this.sbNuevo.Appearance.Options.UseImage = true;
             this.sbNuevo.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.sbNuevo.Image = ((System.Drawing.Image)(resources.GetObject("sbNuevo.Image")));
+            this.sbNuevo.Image = global::TraxPark.Properties.Resources.mas2;
             this.sbNuevo.Location = new System.Drawing.Point(24, 16);
             this.sbNuevo.Name = "sbNuevo";
             this.sbNuevo.Size = new System.Drawing.Size(110, 35);
@@ -459,7 +487,7 @@
             this.sbEliminar.Appearance.Options.UseForeColor = true;
             this.sbEliminar.Appearance.Options.UseImage = true;
             this.sbEliminar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.sbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("sbEliminar.Image")));
+            this.sbEliminar.Image = global::TraxPark.Properties.Resources.contenedor_de_reciclaje1;
             this.sbEliminar.Location = new System.Drawing.Point(24, 144);
             this.sbEliminar.Name = "sbEliminar";
             this.sbEliminar.Size = new System.Drawing.Size(110, 35);
@@ -495,34 +523,6 @@
             this.panel2.Size = new System.Drawing.Size(462, 456);
             this.panel2.TabIndex = 32;
             // 
-            // d_FechaInicial
-            // 
-            this.d_FechaInicial.EditValue = null;
-            this.d_FechaInicial.Location = new System.Drawing.Point(197, 220);
-            this.d_FechaInicial.Name = "d_FechaInicial";
-            this.d_FechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.d_FechaInicial.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.d_FechaInicial.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
-            this.d_FechaInicial.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
-            this.d_FechaInicial.Size = new System.Drawing.Size(193, 20);
-            this.d_FechaInicial.TabIndex = 32;
-            // 
-            // dateEdit2
-            // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(197, 250);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
-            this.dateEdit2.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
-            this.dateEdit2.Size = new System.Drawing.Size(193, 20);
-            this.dateEdit2.TabIndex = 33;
-            // 
             // Man_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,11 +537,11 @@
             this.Name = "Man_Empresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "control";
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRuc.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRazonSocial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDireccion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoContratado.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTiempoConsumido.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
@@ -550,14 +550,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaFinal.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaFinal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).EndInit();
             this.nbcOpciones.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -565,11 +565,11 @@
         #endregion
 
         private Telerik.WinControls.RootRadElement object_4672ec09_19ae_4c6c_b890_21a807846c97;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtTiempoConsumido;
+        private DevExpress.XtraEditors.TextEdit txtTiempoContratado;
+        private DevExpress.XtraEditors.TextEdit txtDireccion;
+        private DevExpress.XtraEditors.TextEdit txtRazonSocial;
+        private DevExpress.XtraEditors.TextEdit txtRuc;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -602,7 +602,7 @@
         private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
         private System.Windows.Forms.Button button1;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
+        private DevExpress.XtraEditors.DateEdit d_FechaFinal;
         private DevExpress.XtraEditors.DateEdit d_FechaInicial;
     }
 }
