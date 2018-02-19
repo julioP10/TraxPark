@@ -35,12 +35,12 @@ namespace TraxPark.Windows
 
         private void TxtRuc_Enter(object sender, EventArgs e)
         {
-            TxtRuc.TextBoxElement.TextBoxItem.BackColor = Color.LightYellow;
+            //TxtRuc.TextBoxElement.TextBoxItem.BackColor = Color.LightYellow;
         }
 
         private void TxtRuc_Leave(object sender, EventArgs e)
         {
-            TxtRuc.TextBoxElement.TextBoxItem.BackColor = Color.White; 
+            //TxtRuc.TextBoxElement.TextBoxItem.BackColor = Color.White; 
         }
 
         private void TxtRuc_KeyPress(object sender, KeyPressEventArgs e)
@@ -93,12 +93,12 @@ namespace TraxPark.Windows
 
         private void Limpiar()
         {
-            TxtRuc.Text = String.Empty;
-            txtRazonSocial.Text = String.Empty;
-            txtDireccion.Text = String.Empty;
-            ceContratarTiempo.Checked = false;
-            txtTiempoContratado.Text = String.Empty;
-            txtTiempoConsumido.Text = string.Empty;
+            //TxtRuc.Text = String.Empty;
+            //txtRazonSocial.Text = String.Empty;
+            //txtDireccion.Text = String.Empty;
+            //ceContratarTiempo.Checked = false;
+            //txtTiempoContratado.Text = String.Empty;
+            //txtTiempoConsumido.Text = string.Empty;
             /*
              rdtpFechaInicial
              rdtpFechaFinal
@@ -119,6 +119,116 @@ namespace TraxPark.Windows
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscarEmpresa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit2_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit3_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblContratarATiempo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdtpFechaInicial_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdtpFechaFinal_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit5_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit4_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radGroupBox3_Click(object sender, EventArgs e)
+        {
+
         }
 
       

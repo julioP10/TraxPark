@@ -28,364 +28,212 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Man_Empresa));
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.object_4672ec09_19ae_4c6c_b890_21a807846c97 = new Telerik.WinControls.RootRadElement();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.rdtpFechaInicial = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.rdtpFechaFinal = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.ceContratarTiempo = new Telerik.WinControls.UI.RadCheckBox();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.gcEmpresa = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.button1 = new System.Windows.Forms.Button();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.nbcOpciones = new DevExpress.XtraNavBar.NavBarControl();
             this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
-            this.nbcOpciones = new DevExpress.XtraNavBar.NavBarControl();
-            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.sbNuevo = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSalir = new DevExpress.XtraEditors.SimpleButton();
+            this.sbSalir = new DevExpress.XtraEditors.SimpleButton();
             this.sbEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.sbModificar = new DevExpress.XtraEditors.SimpleButton();
-            this.object_4672ec09_19ae_4c6c_b890_21a807846c97 = new Telerik.WinControls.RootRadElement();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaInicial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaFinal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
-            this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
-            this.radGroupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            this.navBarControl1.SuspendLayout();
-            this.navBarGroupControlContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.radPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).BeginInit();
-            this.nbcOpciones.SuspendLayout();
-            this.navBarGroupControlContainer2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.d_FechaInicial = new DevExpress.XtraEditors.DateEdit();
+            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
+            this.radGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).BeginInit();
+            this.nbcOpciones.SuspendLayout();
+            this.navBarGroupControlContainer1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelControl1
+            // object_4672ec09_19ae_4c6c_b890_21a807846c97
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(78, 53);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(76, 17);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Razón Social :";
+            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.Name = "object_4672ec09_19ae_4c6c_b890_21a807846c97";
+            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchHorizontally = true;
+            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchVertically = true;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(123, 27);
+            this.labelControl2.Location = new System.Drawing.Point(154, 52);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(30, 17);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "RUC :";
+            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Location = new System.Drawing.Point(109, 78);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(76, 17);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Razón Social :";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(95, 84);
+            this.labelControl6.Location = new System.Drawing.Point(126, 109);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(58, 17);
             this.labelControl6.TabIndex = 11;
             this.labelControl6.Text = "Dirección :";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(272, 6);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(31, 13);
-            this.labelControl8.TabIndex = 2;
-            this.labelControl8.Text = "Baja :";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(51, 7);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(48, 13);
-            this.labelControl7.TabIndex = 0;
-            this.labelControl7.Text = "Activos :";
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.simpleButton1.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.simpleButton1.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.Appearance.Options.UseBorderColor = true;
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Appearance.Options.UseForeColor = true;
-            this.simpleButton1.Appearance.Options.UseImage = true;
-            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(23, 14);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton1.TabIndex = 1;
-            this.simpleButton1.Text = "NUEVO";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.simpleButton2.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.simpleButton2.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.Appearance.Options.UseBorderColor = true;
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Appearance.Options.UseForeColor = true;
-            this.simpleButton2.Appearance.Options.UseImage = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(23, 70);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton2.TabIndex = 2;
-            this.simpleButton2.Text = "MODIFICAR";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.simpleButton3.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseBorderColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Appearance.Options.UseForeColor = true;
-            this.simpleButton3.Appearance.Options.UseImage = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton3.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(23, 127);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton3.TabIndex = 3;
-            this.simpleButton3.Text = "ELIMINAR";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.simpleButton4.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.simpleButton4.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton4.Appearance.Options.UseBackColor = true;
-            this.simpleButton4.Appearance.Options.UseBorderColor = true;
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Appearance.Options.UseForeColor = true;
-            this.simpleButton4.Appearance.Options.UseImage = true;
-            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton4.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(23, 364);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(110, 35);
-            this.simpleButton4.TabIndex = 4;
-            this.simpleButton4.Text = "SALIR";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(26, 137);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(128, 17);
-            this.labelControl3.TabIndex = 14;
-            this.labelControl3.Text = "TIEMPO CONTRATADO :";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(33, 167);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(120, 17);
-            this.labelControl4.TabIndex = 16;
-            this.labelControl4.Text = "TIEMPO CONSUMIDO :";
+            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(74, 226);
+            this.labelControl5.Location = new System.Drawing.Point(105, 251);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(79, 17);
             this.labelControl5.TabIndex = 20;
             this.labelControl5.Text = "FECHA FINAL :";
+            this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Location = new System.Drawing.Point(67, 196);
+            this.labelControl9.Location = new System.Drawing.Point(98, 221);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(86, 17);
             this.labelControl9.TabIndex = 18;
             this.labelControl9.Text = "FECHA INICIAL :";
+            this.labelControl9.Click += new System.EventHandler(this.labelControl9_Click);
             // 
-            // rdtpFechaInicial
+            // labelControl3
             // 
-            this.rdtpFechaInicial.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rdtpFechaInicial.CustomFormat = "";
-            this.rdtpFechaInicial.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdtpFechaInicial.Location = new System.Drawing.Point(165, 196);
-            this.rdtpFechaInicial.Name = "rdtpFechaInicial";
-            this.rdtpFechaInicial.Size = new System.Drawing.Size(144, 20);
-            this.rdtpFechaInicial.TabIndex = 6;
-            this.rdtpFechaInicial.TabStop = false;
-            this.rdtpFechaInicial.Text = "viernes, 05 de enero de 2018";
-            this.rdtpFechaInicial.Value = new System.DateTime(2018, 1, 5, 13, 17, 4, 416);
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Location = new System.Drawing.Point(57, 162);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(128, 17);
+            this.labelControl3.TabIndex = 14;
+            this.labelControl3.Text = "TIEMPO CONTRATADO :";
+            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
             // 
-            // rdtpFechaFinal
+            // labelControl4
             // 
-            this.rdtpFechaFinal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rdtpFechaFinal.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdtpFechaFinal.Location = new System.Drawing.Point(165, 226);
-            this.rdtpFechaFinal.Name = "rdtpFechaFinal";
-            this.rdtpFechaFinal.Size = new System.Drawing.Size(144, 20);
-            this.rdtpFechaFinal.TabIndex = 7;
-            this.rdtpFechaFinal.TabStop = false;
-            this.rdtpFechaFinal.Text = "viernes, 05 de enero de 2018";
-            this.rdtpFechaFinal.Value = new System.DateTime(2018, 1, 5, 13, 17, 29, 87);
-            // 
-            // radGroupBox1
-            // 
-            this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radGroupBox1.Controls.Add(this.textEdit5);
-            this.radGroupBox1.Controls.Add(this.textEdit4);
-            this.radGroupBox1.Controls.Add(this.textEdit3);
-            this.radGroupBox1.Controls.Add(this.textEdit2);
-            this.radGroupBox1.Controls.Add(this.textEdit1);
-            this.radGroupBox1.Controls.Add(this.ceContratarTiempo);
-            this.radGroupBox1.Controls.Add(this.labelControl11);
-            this.radGroupBox1.Controls.Add(this.labelControl10);
-            this.radGroupBox1.Controls.Add(this.simpleButton5);
-            this.radGroupBox1.Controls.Add(this.labelControl4);
-            this.radGroupBox1.Controls.Add(this.labelControl3);
-            this.radGroupBox1.Controls.Add(this.labelControl9);
-            this.radGroupBox1.Controls.Add(this.labelControl5);
-            this.radGroupBox1.Controls.Add(this.labelControl6);
-            this.radGroupBox1.Controls.Add(this.labelControl1);
-            this.radGroupBox1.Controls.Add(this.rdtpFechaInicial);
-            this.radGroupBox1.Controls.Add(this.labelControl2);
-            this.radGroupBox1.Controls.Add(this.rdtpFechaFinal);
-            this.radGroupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radGroupBox1.HeaderText = "Datos de la Empresa";
-            this.radGroupBox1.Location = new System.Drawing.Point(12, 6);
-            this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(337, 265);
-            this.radGroupBox1.TabIndex = 0;
-            this.radGroupBox1.Text = "Datos de la Empresa";
-            // 
-            // ceContratarTiempo
-            // 
-            this.ceContratarTiempo.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ceContratarTiempo.Location = new System.Drawing.Point(165, 114);
-            this.ceContratarTiempo.Name = "ceContratarTiempo";
-            this.ceContratarTiempo.Size = new System.Drawing.Size(140, 18);
-            this.ceContratarTiempo.TabIndex = 24;
-            this.ceContratarTiempo.Text = "CONTRATAR TIEMPO";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Location = new System.Drawing.Point(287, 163);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(45, 17);
-            this.labelControl11.TabIndex = 23;
-            this.labelControl11.Text = "minutos";
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Location = new System.Drawing.Point(64, 192);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(120, 17);
+            this.labelControl4.TabIndex = 16;
+            this.labelControl4.Text = "TIEMPO CONSUMIDO :";
+            this.labelControl4.Click += new System.EventHandler(this.labelControl4_Click);
             // 
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Location = new System.Drawing.Point(286, 134);
+            this.labelControl10.Location = new System.Drawing.Point(345, 166);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(45, 17);
             this.labelControl10.TabIndex = 22;
             this.labelControl10.Text = "minutos";
+            this.labelControl10.Click += new System.EventHandler(this.labelControl10_Click);
             // 
-            // simpleButton5
+            // labelControl11
             // 
-            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.simpleButton5.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseBorderColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Appearance.Options.UseForeColor = true;
-            this.simpleButton5.Appearance.Options.UseImage = true;
-            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.simpleButton5.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.Image")));
-            this.simpleButton5.Location = new System.Drawing.Point(435, 21);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(0, 28);
-            this.simpleButton5.TabIndex = 5;
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl11.Location = new System.Drawing.Point(345, 191);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(45, 17);
+            this.labelControl11.TabIndex = 23;
+            this.labelControl11.Text = "minutos";
+            this.labelControl11.Click += new System.EventHandler(this.labelControl11_Click);
             // 
-            // radGroupBox3
+            // textEdit1
             // 
-            this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radGroupBox3.Controls.Add(this.labelControl7);
-            this.radGroupBox3.Controls.Add(this.labelControl8);
-            this.radGroupBox3.HeaderText = "";
-            this.radGroupBox3.Location = new System.Drawing.Point(16, 534);
-            this.radGroupBox3.Name = "radGroupBox3";
-            this.radGroupBox3.Size = new System.Drawing.Size(785, 28);
-            this.radGroupBox3.TabIndex = 26;
+            this.textEdit1.Location = new System.Drawing.Point(196, 49);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(143, 20);
+            this.textEdit1.TabIndex = 1;
+            this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(196, 75);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(196, 20);
+            this.textEdit2.TabIndex = 25;
+            this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(196, 106);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Size = new System.Drawing.Size(195, 20);
+            this.textEdit3.TabIndex = 26;
+            this.textEdit3.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Location = new System.Drawing.Point(196, 165);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Size = new System.Drawing.Size(143, 20);
+            this.textEdit4.TabIndex = 27;
+            this.textEdit4.EditValueChanged += new System.EventHandler(this.textEdit4_EditValueChanged);
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Location = new System.Drawing.Point(197, 191);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Size = new System.Drawing.Size(142, 20);
+            this.textEdit5.TabIndex = 28;
+            this.textEdit5.EditValueChanged += new System.EventHandler(this.textEdit5_EditValueChanged);
             // 
             // gcEmpresa
             // 
             this.gcEmpresa.Dock = System.Windows.Forms.DockStyle.Left;
+            gridLevelNode2.RelationName = "Level1";
+            this.gcEmpresa.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode2});
             this.gcEmpresa.Location = new System.Drawing.Point(0, 0);
             this.gcEmpresa.MainView = this.gridView1;
             this.gcEmpresa.Name = "gcEmpresa";
-            this.gcEmpresa.Size = new System.Drawing.Size(448, 575);
+            this.gcEmpresa.Size = new System.Drawing.Size(357, 456);
             this.gcEmpresa.TabIndex = 2;
             this.gcEmpresa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -431,21 +279,110 @@
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
             // 
-            // navBarControl1
+            // radGroupBox3
             // 
-            this.navBarControl1.ActiveGroup = this.nbgMail;
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
-            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.radGroupBox3.Controls.Add(this.labelControl7);
+            this.radGroupBox3.Controls.Add(this.labelControl8);
+            this.radGroupBox3.HeaderText = "";
+            this.radGroupBox3.Location = new System.Drawing.Point(62, 377);
+            this.radGroupBox3.Name = "radGroupBox3";
+            this.radGroupBox3.Size = new System.Drawing.Size(352, 28);
+            this.radGroupBox3.TabIndex = 26;
+            this.radGroupBox3.Click += new System.EventHandler(this.radGroupBox3_Click);
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Location = new System.Drawing.Point(51, 7);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(48, 13);
+            this.labelControl7.TabIndex = 0;
+            this.labelControl7.Text = "Activos :";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl8.Location = new System.Drawing.Point(272, 6);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(31, 13);
+            this.labelControl8.TabIndex = 2;
+            this.labelControl8.Text = "Baja :";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.groupControl1.Appearance.Options.UseBorderColor = true;
+            this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.dateEdit2);
+            this.groupControl1.Controls.Add(this.d_FechaInicial);
+            this.groupControl1.Controls.Add(this.button1);
+            this.groupControl1.Controls.Add(this.labelControl12);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.textEdit5);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.textEdit4);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.radGroupBox3);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.textEdit3);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.labelControl11);
+            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Location = new System.Drawing.Point(4, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(452, 456);
+            this.groupControl1.TabIndex = 30;
+            this.groupControl1.Text = "Datos";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::TraxPark.Properties.Resources.busqueda_de_usuario;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(364, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 26);
+            this.button1.TabIndex = 31;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl12.Location = new System.Drawing.Point(278, 132);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(113, 17);
+            this.labelControl12.TabIndex = 30;
+            this.labelControl12.Text = "CONTRATAR TIEMPO";
+            // 
+            // nbcOpciones
+            // 
+            this.nbcOpciones.ActiveGroup = this.nbgMail;
+            this.nbcOpciones.Controls.Add(this.navBarGroupControlContainer1);
+            this.nbcOpciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.nbcOpciones.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.nbgMail});
-            this.navBarControl1.Location = new System.Drawing.Point(553, 0);
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.NavigationPaneGroupClientHeight = 320;
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 158;
-            this.navBarControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.navBarControl1.Size = new System.Drawing.Size(158, 547);
-            this.navBarControl1.TabIndex = 27;
-            this.navBarControl1.Text = "navBarControl1";
-            this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Glass Oceans");
+            this.nbcOpciones.Location = new System.Drawing.Point(819, 0);
+            this.nbcOpciones.Name = "nbcOpciones";
+            this.nbcOpciones.NavigationPaneGroupClientHeight = 320;
+            this.nbcOpciones.OptionsNavPane.ExpandedWidth = 160;
+            this.nbcOpciones.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
+            this.nbcOpciones.Size = new System.Drawing.Size(160, 456);
+            this.nbcOpciones.StoreDefaultPaintStyleName = true;
+            this.nbcOpciones.TabIndex = 31;
+            this.nbcOpciones.TabStop = true;
+            this.nbcOpciones.Text = "navBarControl1";
             // 
             // nbgMail
             // 
@@ -454,78 +391,26 @@
             this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
             this.nbgMail.Expanded = true;
             this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgMail.GroupClientHeight = 80;
+            this.nbgMail.GroupClientHeight = 424;
             this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.nbgMail.Name = "nbgMail";
             // 
             // navBarGroupControlContainer1
             // 
-            this.navBarGroupControlContainer1.Controls.Add(this.simpleButton1);
-            this.navBarGroupControlContainer1.Controls.Add(this.simpleButton4);
-            this.navBarGroupControlContainer1.Controls.Add(this.simpleButton3);
-            this.navBarGroupControlContainer1.Controls.Add(this.simpleButton2);
+            this.navBarGroupControlContainer1.Controls.Add(this.sbNuevo);
+            this.navBarGroupControlContainer1.Controls.Add(this.sbSalir);
+            this.navBarGroupControlContainer1.Controls.Add(this.sbEliminar);
+            this.navBarGroupControlContainer1.Controls.Add(this.sbModificar);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(154, 445);
-            this.navBarGroupControlContainer1.TabIndex = 0;
-            // 
-            // radPanel1
-            // 
-            this.radPanel1.Controls.Add(this.panel1);
-            this.radPanel1.Controls.Add(this.nbcOpciones);
-            this.radPanel1.Controls.Add(this.gcEmpresa);
-            this.radPanel1.Controls.Add(this.radGroupBox3);
-            this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radPanel1.Location = new System.Drawing.Point(0, 0);
-            this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(979, 575);
-            this.radPanel1.TabIndex = 0;
-            this.radPanel1.UseCompatibleTextRendering = false;
-            // 
-            // nbcOpciones
-            // 
-            this.nbcOpciones.ActiveGroup = this.navBarGroup1;
-            this.nbcOpciones.Controls.Add(this.navBarGroupControlContainer2);
-            this.nbcOpciones.Dock = System.Windows.Forms.DockStyle.Right;
-            this.nbcOpciones.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup1});
-            this.nbcOpciones.Location = new System.Drawing.Point(819, 0);
-            this.nbcOpciones.Name = "nbcOpciones";
-            this.nbcOpciones.NavigationPaneGroupClientHeight = 320;
-            this.nbcOpciones.OptionsNavPane.ExpandedWidth = 160;
-            this.nbcOpciones.Size = new System.Drawing.Size(160, 575);
-            this.nbcOpciones.TabIndex = 1;
-            this.nbcOpciones.TabStop = true;
-            this.nbcOpciones.Text = "navBarControl2";
-            this.nbcOpciones.UseWaitCursor = true;
-            this.nbcOpciones.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Glass Oceans");
-            // 
-            // navBarGroup1
-            // 
-            this.navBarGroup1.Caption = "OPCIONES";
-            this.navBarGroup1.ControlContainer = this.navBarGroupControlContainer2;
-            this.navBarGroup1.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.navBarGroup1.Expanded = true;
-            this.navBarGroup1.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.navBarGroup1.GroupClientHeight = 80;
-            this.navBarGroup1.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navBarGroup1.Name = "navBarGroup1";
-            // 
-            // navBarGroupControlContainer2
-            // 
-            this.navBarGroupControlContainer2.Controls.Add(this.sbNuevo);
-            this.navBarGroupControlContainer2.Controls.Add(this.btnSalir);
-            this.navBarGroupControlContainer2.Controls.Add(this.sbEliminar);
-            this.navBarGroupControlContainer2.Controls.Add(this.sbModificar);
-            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
-            this.navBarGroupControlContainer2.Size = new System.Drawing.Size(156, 473);
-            this.navBarGroupControlContainer2.TabIndex = 0;
-            this.navBarGroupControlContainer2.UseWaitCursor = true;
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(160, 376);
+            this.navBarGroupControlContainer1.TabIndex = 1;
+            this.navBarGroupControlContainer1.TabStop = true;
             // 
             // sbNuevo
             // 
-            this.sbNuevo.Appearance.BackColor = System.Drawing.Color.SkyBlue;
+            this.sbNuevo.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.sbNuevo.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.sbNuevo.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.sbNuevo.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.sbNuevo.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbNuevo.Appearance.ForeColor = System.Drawing.Color.Black;
             this.sbNuevo.Appearance.Options.UseBackColor = true;
@@ -533,42 +418,39 @@
             this.sbNuevo.Appearance.Options.UseFont = true;
             this.sbNuevo.Appearance.Options.UseForeColor = true;
             this.sbNuevo.Appearance.Options.UseImage = true;
-            this.sbNuevo.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.sbNuevo.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.sbNuevo.Image = ((System.Drawing.Image)(resources.GetObject("sbNuevo.Image")));
-            this.sbNuevo.Location = new System.Drawing.Point(23, 19);
+            this.sbNuevo.Location = new System.Drawing.Point(24, 16);
             this.sbNuevo.Name = "sbNuevo";
             this.sbNuevo.Size = new System.Drawing.Size(110, 35);
             this.sbNuevo.TabIndex = 0;
             this.sbNuevo.Text = "NUEVO";
-            this.sbNuevo.UseWaitCursor = true;
             // 
-            // btnSalir
+            // sbSalir
             // 
-            this.btnSalir.Appearance.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnSalir.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.btnSalir.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnSalir.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Appearance.Options.UseBackColor = true;
-            this.btnSalir.Appearance.Options.UseBorderColor = true;
-            this.btnSalir.Appearance.Options.UseFont = true;
-            this.btnSalir.Appearance.Options.UseForeColor = true;
-            this.btnSalir.Appearance.Options.UseImage = true;
-            this.btnSalir.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.Location = new System.Drawing.Point(23, 420);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(110, 35);
-            this.btnSalir.TabIndex = 3;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseWaitCursor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.sbSalir.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.sbSalir.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
+            this.sbSalir.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.sbSalir.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sbSalir.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.sbSalir.Appearance.Options.UseBackColor = true;
+            this.sbSalir.Appearance.Options.UseBorderColor = true;
+            this.sbSalir.Appearance.Options.UseFont = true;
+            this.sbSalir.Appearance.Options.UseForeColor = true;
+            this.sbSalir.Appearance.Options.UseImage = true;
+            this.sbSalir.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.sbSalir.Image = ((System.Drawing.Image)(resources.GetObject("sbSalir.Image")));
+            this.sbSalir.Location = new System.Drawing.Point(34, 328);
+            this.sbSalir.Name = "sbSalir";
+            this.sbSalir.Size = new System.Drawing.Size(110, 35);
+            this.sbSalir.TabIndex = 3;
+            this.sbSalir.Text = "SALIR";
             // 
             // sbEliminar
             // 
-            this.sbEliminar.Appearance.BackColor = System.Drawing.Color.SkyBlue;
+            this.sbEliminar.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.sbEliminar.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.sbEliminar.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.sbEliminar.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.sbEliminar.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbEliminar.Appearance.ForeColor = System.Drawing.Color.Black;
             this.sbEliminar.Appearance.Options.UseBackColor = true;
@@ -576,20 +458,19 @@
             this.sbEliminar.Appearance.Options.UseFont = true;
             this.sbEliminar.Appearance.Options.UseForeColor = true;
             this.sbEliminar.Appearance.Options.UseImage = true;
-            this.sbEliminar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
+            this.sbEliminar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.sbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("sbEliminar.Image")));
-            this.sbEliminar.Location = new System.Drawing.Point(23, 128);
+            this.sbEliminar.Location = new System.Drawing.Point(24, 144);
             this.sbEliminar.Name = "sbEliminar";
             this.sbEliminar.Size = new System.Drawing.Size(110, 35);
             this.sbEliminar.TabIndex = 2;
             this.sbEliminar.Text = "ELIMINAR";
-            this.sbEliminar.UseWaitCursor = true;
             // 
             // sbModificar
             // 
-            this.sbModificar.Appearance.BackColor = System.Drawing.Color.SkyBlue;
+            this.sbModificar.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.sbModificar.Appearance.BackColor2 = System.Drawing.Color.PowderBlue;
-            this.sbModificar.Appearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.sbModificar.Appearance.BorderColor = System.Drawing.Color.Transparent;
             this.sbModificar.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbModificar.Appearance.ForeColor = System.Drawing.Color.Black;
             this.sbModificar.Appearance.Options.UseBackColor = true;
@@ -597,152 +478,131 @@
             this.sbModificar.Appearance.Options.UseFont = true;
             this.sbModificar.Appearance.Options.UseForeColor = true;
             this.sbModificar.Appearance.Options.UseImage = true;
-            this.sbModificar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.sbModificar.Image = ((System.Drawing.Image)(resources.GetObject("sbModificar.Image")));
-            this.sbModificar.Location = new System.Drawing.Point(23, 71);
+            this.sbModificar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.sbModificar.Image = global::TraxPark.Properties.Resources.contrato;
+            this.sbModificar.Location = new System.Drawing.Point(24, 80);
             this.sbModificar.Name = "sbModificar";
             this.sbModificar.Size = new System.Drawing.Size(110, 35);
             this.sbModificar.TabIndex = 1;
-            this.sbModificar.Text = "MODIFICAR";
-            this.sbModificar.UseWaitCursor = true;
+            this.sbModificar.Text = "GUARDAR";
             // 
-            // object_4672ec09_19ae_4c6c_b890_21a807846c97
+            // panel2
             // 
-            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.Name = "object_4672ec09_19ae_4c6c_b890_21a807846c97";
-            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchHorizontally = true;
-            this.object_4672ec09_19ae_4c6c_b890_21a807846c97.StretchVertically = true;
+            this.panel2.Controls.Add(this.groupControl1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(357, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(462, 456);
+            this.panel2.TabIndex = 32;
             // 
-            // panel1
+            // d_FechaInicial
             // 
-            this.panel1.Controls.Add(this.radGroupBox1);
-            this.panel1.Location = new System.Drawing.Point(454, 9);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(361, 477);
-            this.panel1.TabIndex = 27;
+            this.d_FechaInicial.EditValue = null;
+            this.d_FechaInicial.Location = new System.Drawing.Point(197, 220);
+            this.d_FechaInicial.Name = "d_FechaInicial";
+            this.d_FechaInicial.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaInicial.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.d_FechaInicial.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.d_FechaInicial.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
+            this.d_FechaInicial.Size = new System.Drawing.Size(193, 20);
+            this.d_FechaInicial.TabIndex = 32;
             // 
-            // textEdit1
+            // dateEdit2
             // 
-            this.textEdit1.Location = new System.Drawing.Point(165, 24);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(144, 20);
-            this.textEdit1.TabIndex = 1;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(165, 50);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(144, 20);
-            this.textEdit2.TabIndex = 25;
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(165, 81);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(144, 20);
-            this.textEdit3.TabIndex = 26;
-            // 
-            // textEdit4
-            // 
-            this.textEdit4.Location = new System.Drawing.Point(161, 136);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(120, 20);
-            this.textEdit4.TabIndex = 27;
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(161, 166);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(120, 20);
-            this.textEdit5.TabIndex = 28;
+            this.dateEdit2.EditValue = null;
+            this.dateEdit2.Location = new System.Drawing.Point(197, 250);
+            this.dateEdit2.Name = "dateEdit2";
+            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateEdit2.Properties.CalendarTimeProperties.CloseUpKey = new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F4);
+            this.dateEdit2.Properties.CalendarTimeProperties.PopupBorderStyle = DevExpress.XtraEditors.Controls.PopupBorderStyles.Default;
+            this.dateEdit2.Size = new System.Drawing.Size(193, 20);
+            this.dateEdit2.TabIndex = 33;
             // 
             // Man_Empresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 575);
-            this.Controls.Add(this.radPanel1);
-            this.Controls.Add(this.navBarControl1);
+            this.ClientSize = new System.Drawing.Size(979, 456);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.nbcOpciones);
+            this.Controls.Add(this.gcEmpresa);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Man_Empresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "control";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaInicial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rdtpFechaFinal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
-            this.radGroupBox1.ResumeLayout(false);
-            this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ceContratarTiempo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
-            this.radGroupBox3.ResumeLayout(false);
-            this.radGroupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            this.navBarControl1.ResumeLayout(false);
-            this.navBarGroupControlContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
-            this.radPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).EndInit();
-            this.nbcOpciones.ResumeLayout(false);
-            this.navBarGroupControlContainer2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
+            this.radGroupBox3.ResumeLayout(false);
+            this.radGroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).EndInit();
+            this.nbcOpciones.ResumeLayout(false);
+            this.navBarGroupControlContainer1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_FechaInicial.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private Telerik.WinControls.RootRadElement object_4672ec09_19ae_4c6c_b890_21a807846c97;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private Telerik.WinControls.UI.RadDateTimePicker rdtpFechaInicial;
-        private Telerik.WinControls.UI.RadDateTimePicker rdtpFechaFinal;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
         private DevExpress.XtraGrid.GridControl gcEmpresa;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraNavBar.NavBarControl navBarControl1;
+        private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraNavBar.NavBarControl nbcOpciones;
         private DevExpress.XtraNavBar.NavBarGroup nbgMail;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
-        private Telerik.WinControls.UI.RadPanel radPanel1;
-        private Telerik.WinControls.RootRadElement object_4672ec09_19ae_4c6c_b890_21a807846c97;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraNavBar.NavBarControl nbcOpciones;
-        private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
-        private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer2;
-        private DevExpress.XtraEditors.SimpleButton btnSalir;
+        private DevExpress.XtraEditors.SimpleButton sbNuevo;
+        private DevExpress.XtraEditors.SimpleButton sbSalir;
         private DevExpress.XtraEditors.SimpleButton sbEliminar;
         private DevExpress.XtraEditors.SimpleButton sbModificar;
-        private DevExpress.XtraEditors.SimpleButton sbNuevo;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private Telerik.WinControls.UI.RadCheckBox ceContratarTiempo;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblContratarATiempo;
+        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox1;
+        private Bunifu.Framework.UI.BunifuCheckbox bunifuCheckbox2;
+        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.DateEdit dateEdit2;
+        private DevExpress.XtraEditors.DateEdit d_FechaInicial;
     }
 }
