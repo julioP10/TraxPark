@@ -8,11 +8,17 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Telerik.WinControls.Primitives;
 using Telerik.WinControls.UI;
+using System.Runtime.InteropServices;
 
 namespace TraxPark.Windows
 {
     public partial class Man_Empresa : DevExpress.XtraEditors.XtraForm
     {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
         private static Man_Empresa m_FormDefInstance;
         public static Man_Empresa DefInstance
         {
@@ -121,114 +127,15 @@ namespace TraxPark.Windows
             this.Close();
         }
 
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
+       
 
+        private void groupControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void textEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuscarEmpresa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit2_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblContratarATiempo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCheckbox1_OnChange(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdtpFechaInicial_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdtpFechaFinal_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit5_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit4_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radGroupBox3_Click(object sender, EventArgs e)
-        {
-
+     
         }
 
       
@@ -247,20 +154,5 @@ namespace TraxPark.Windows
 
        
 
-       
-        
-        
-        
-       
-       
 
-       
-
-       
-      
-
-        
-
-       
-    }
 }

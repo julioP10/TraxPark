@@ -57,8 +57,8 @@ namespace TraxPark
 
         private void rbBtnGestEmp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Man_Empresa.DefInstance.MdiParent = this;
-             Man_Empresa.DefInstance.Show();
+            Man_Empresa mm = new Man_Empresa();
+             mm.Show();
         }
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)

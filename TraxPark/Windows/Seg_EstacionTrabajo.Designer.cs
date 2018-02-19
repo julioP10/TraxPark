@@ -34,7 +34,6 @@
             this.txtNroMaqRegistradora = new Telerik.WinControls.UI.RadTextBox();
             this.gcEstacionTrabajo = new DevExpress.XtraGrid.GridControl();
             this.gvEstacionTrabajo = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.cbEstado = new Telerik.WinControls.UI.RadCheckBox();
             this.rddlImpresora = new Telerik.WinControls.UI.RadDropDownList();
             this.cbExcepcion = new Telerik.WinControls.UI.RadCheckBox();
@@ -58,14 +57,12 @@
             this.sbSalir = new DevExpress.XtraEditors.SimpleButton();
             this.sbEliminar = new DevExpress.XtraEditors.SimpleButton();
             this.sbModificar = new DevExpress.XtraEditors.SimpleButton();
-            this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNroAutenticacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNroMaqRegistradora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEstacionTrabajo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvEstacionTrabajo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
-            this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbEstado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rddlImpresora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbExcepcion)).BeginInit();
@@ -76,49 +73,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).BeginInit();
             this.nbcOpciones.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
-            this.radPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescripcion.Location = new System.Drawing.Point(158, 21);
+            this.txtDescripcion.Location = new System.Drawing.Point(517, 27);
             this.txtDescripcion.MaxLength = 50;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(194, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(167, 20);
             this.txtDescripcion.TabIndex = 0;
             // 
             // txtNroAutenticacion
             // 
-            this.txtNroAutenticacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNroAutenticacion.Location = new System.Drawing.Point(158, 47);
+            this.txtNroAutenticacion.Location = new System.Drawing.Point(517, 53);
             this.txtNroAutenticacion.MaxLength = 20;
             this.txtNroAutenticacion.Name = "txtNroAutenticacion";
-            this.txtNroAutenticacion.Size = new System.Drawing.Size(194, 20);
+            this.txtNroAutenticacion.Size = new System.Drawing.Size(167, 20);
             this.txtNroAutenticacion.TabIndex = 1;
             this.txtNroAutenticacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNroAutenticacion_KeyPress);
             // 
             // txtNroMaqRegistradora
             // 
-            this.txtNroMaqRegistradora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNroMaqRegistradora.Location = new System.Drawing.Point(158, 73);
+            this.txtNroMaqRegistradora.Location = new System.Drawing.Point(517, 79);
             this.txtNroMaqRegistradora.MaxLength = 20;
             this.txtNroMaqRegistradora.Name = "txtNroMaqRegistradora";
-            this.txtNroMaqRegistradora.Size = new System.Drawing.Size(194, 20);
+            this.txtNroMaqRegistradora.Size = new System.Drawing.Size(167, 20);
             this.txtNroMaqRegistradora.TabIndex = 2;
             // 
             // gcEstacionTrabajo
             // 
-            this.gcEstacionTrabajo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.gcEstacionTrabajo.Location = new System.Drawing.Point(12, 294);
+            this.gcEstacionTrabajo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gcEstacionTrabajo.Location = new System.Drawing.Point(2, 19);
             this.gcEstacionTrabajo.MainView = this.gvEstacionTrabajo;
             this.gcEstacionTrabajo.Name = "gcEstacionTrabajo";
-            this.gcEstacionTrabajo.Size = new System.Drawing.Size(387, 227);
+            this.gcEstacionTrabajo.Size = new System.Drawing.Size(360, 431);
             this.gcEstacionTrabajo.TabIndex = 1;
             this.gcEstacionTrabajo.TabStop = false;
             this.gcEstacionTrabajo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -133,42 +123,10 @@
             this.gvEstacionTrabajo.OptionsView.ShowAutoFilterRow = true;
             this.gvEstacionTrabajo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gvEstacionTrabajo_KeyDown);
             // 
-            // radGroupBox1
-            // 
-            this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.radGroupBox1.Controls.Add(this.cbEstado);
-            this.radGroupBox1.Controls.Add(this.rddlImpresora);
-            this.radGroupBox1.Controls.Add(this.cbExcepcion);
-            this.radGroupBox1.Controls.Add(this.labelControl8);
-            this.radGroupBox1.Controls.Add(this.labelControl7);
-            this.radGroupBox1.Controls.Add(this.labelControl6);
-            this.radGroupBox1.Controls.Add(this.labelControl5);
-            this.radGroupBox1.Controls.Add(this.labelControl4);
-            this.radGroupBox1.Controls.Add(this.labelControl3);
-            this.radGroupBox1.Controls.Add(this.labelControl1);
-            this.radGroupBox1.Controls.Add(this.lblID);
-            this.radGroupBox1.Controls.Add(this.labelControl2);
-            this.radGroupBox1.Controls.Add(this.txtSerieFactura);
-            this.radGroupBox1.Controls.Add(this.txtSerieBoleta);
-            this.radGroupBox1.Controls.Add(this.txtPiePagina);
-            this.radGroupBox1.Controls.Add(this.txtProducto);
-            this.radGroupBox1.Controls.Add(this.txtDescripcion);
-            this.radGroupBox1.Controls.Add(this.txtNroAutenticacion);
-            this.radGroupBox1.Controls.Add(this.txtNroMaqRegistradora);
-            this.radGroupBox1.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radGroupBox1.HeaderText = "Datos de la Estación";
-            this.radGroupBox1.Location = new System.Drawing.Point(12, 12);
-            this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(387, 276);
-            this.radGroupBox1.TabIndex = 0;
-            this.radGroupBox1.Text = "Datos de la Estación";
-            // 
             // cbEstado
             // 
             this.cbEstado.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEstado.Location = new System.Drawing.Point(158, 229);
+            this.cbEstado.Location = new System.Drawing.Point(530, 266);
             this.cbEstado.Name = "cbEstado";
             this.cbEstado.Size = new System.Drawing.Size(60, 18);
             this.cbEstado.TabIndex = 8;
@@ -176,11 +134,9 @@
             // 
             // rddlImpresora
             // 
-            this.rddlImpresora.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rddlImpresora.Location = new System.Drawing.Point(158, 151);
+            this.rddlImpresora.Location = new System.Drawing.Point(517, 157);
             this.rddlImpresora.Name = "rddlImpresora";
-            this.rddlImpresora.Size = new System.Drawing.Size(194, 20);
+            this.rddlImpresora.Size = new System.Drawing.Size(167, 20);
             this.rddlImpresora.TabIndex = 5;
             ((Telerik.WinControls.UI.RadDropDownTextBoxElement)(this.rddlImpresora.GetChildAt(0).GetChildAt(2).GetChildAt(0).GetChildAt(0))).EnableElementShadow = true;
             ((Telerik.WinControls.UI.RadDropDownTextBoxElement)(this.rddlImpresora.GetChildAt(0).GetChildAt(2).GetChildAt(0).GetChildAt(0))).Enabled = true;
@@ -189,7 +145,7 @@
             // cbExcepcion
             // 
             this.cbExcepcion.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbExcepcion.Location = new System.Drawing.Point(158, 253);
+            this.cbExcepcion.Location = new System.Drawing.Point(530, 290);
             this.cbExcepcion.Name = "cbExcepcion";
             this.cbExcepcion.Size = new System.Drawing.Size(130, 18);
             this.cbExcepcion.TabIndex = 9;
@@ -198,7 +154,7 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Location = new System.Drawing.Point(56, 203);
+            this.labelControl8.Location = new System.Drawing.Point(415, 209);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(96, 17);
             this.labelControl8.TabIndex = 10;
@@ -207,7 +163,7 @@
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Location = new System.Drawing.Point(62, 177);
+            this.labelControl7.Location = new System.Drawing.Point(421, 183);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(90, 17);
             this.labelControl7.TabIndex = 10;
@@ -216,7 +172,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Location = new System.Drawing.Point(90, 150);
+            this.labelControl6.Location = new System.Drawing.Point(449, 156);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(62, 17);
             this.labelControl6.TabIndex = 10;
@@ -225,7 +181,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Location = new System.Drawing.Point(69, 125);
+            this.labelControl5.Location = new System.Drawing.Point(428, 131);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(83, 17);
             this.labelControl5.TabIndex = 10;
@@ -234,7 +190,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Location = new System.Drawing.Point(96, 99);
+            this.labelControl4.Location = new System.Drawing.Point(455, 105);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(56, 17);
             this.labelControl4.TabIndex = 10;
@@ -243,7 +199,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Location = new System.Drawing.Point(20, 73);
+            this.labelControl3.Location = new System.Drawing.Point(379, 79);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(132, 17);
             this.labelControl3.TabIndex = 10;
@@ -252,7 +208,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Location = new System.Drawing.Point(45, 47);
+            this.labelControl1.Location = new System.Drawing.Point(404, 53);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(107, 17);
             this.labelControl1.TabIndex = 10;
@@ -261,7 +217,7 @@
             // lblID
             // 
             this.lblID.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(31, 226);
+            this.lblID.Location = new System.Drawing.Point(-35, 238);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(0, 17);
             this.lblID.TabIndex = 10;
@@ -270,7 +226,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Franklin Gothic Medium", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Location = new System.Drawing.Point(81, 21);
+            this.labelControl2.Location = new System.Drawing.Point(440, 27);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(71, 17);
             this.labelControl2.TabIndex = 10;
@@ -278,42 +234,34 @@
             // 
             // txtSerieFactura
             // 
-            this.txtSerieFactura.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSerieFactura.Location = new System.Drawing.Point(158, 203);
+            this.txtSerieFactura.Location = new System.Drawing.Point(517, 209);
             this.txtSerieFactura.MaxLength = 4;
             this.txtSerieFactura.Name = "txtSerieFactura";
-            this.txtSerieFactura.Size = new System.Drawing.Size(194, 20);
+            this.txtSerieFactura.Size = new System.Drawing.Size(167, 20);
             this.txtSerieFactura.TabIndex = 7;
             // 
             // txtSerieBoleta
             // 
-            this.txtSerieBoleta.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSerieBoleta.Location = new System.Drawing.Point(158, 177);
+            this.txtSerieBoleta.Location = new System.Drawing.Point(517, 183);
             this.txtSerieBoleta.MaxLength = 4;
             this.txtSerieBoleta.Name = "txtSerieBoleta";
-            this.txtSerieBoleta.Size = new System.Drawing.Size(194, 20);
+            this.txtSerieBoleta.Size = new System.Drawing.Size(167, 20);
             this.txtSerieBoleta.TabIndex = 6;
             // 
             // txtPiePagina
             // 
-            this.txtPiePagina.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPiePagina.Location = new System.Drawing.Point(158, 125);
+            this.txtPiePagina.Location = new System.Drawing.Point(517, 131);
             this.txtPiePagina.MaxLength = 100;
             this.txtPiePagina.Name = "txtPiePagina";
-            this.txtPiePagina.Size = new System.Drawing.Size(194, 20);
+            this.txtPiePagina.Size = new System.Drawing.Size(167, 20);
             this.txtPiePagina.TabIndex = 4;
             // 
             // txtProducto
             // 
-            this.txtProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtProducto.Location = new System.Drawing.Point(158, 99);
+            this.txtProducto.Location = new System.Drawing.Point(517, 105);
             this.txtProducto.MaxLength = 50;
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(194, 20);
+            this.txtProducto.Size = new System.Drawing.Size(167, 20);
             this.txtProducto.TabIndex = 3;
             // 
             // nbcOpciones
@@ -323,11 +271,11 @@
             this.nbcOpciones.Dock = System.Windows.Forms.DockStyle.Right;
             this.nbcOpciones.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.nbgMail});
-            this.nbcOpciones.Location = new System.Drawing.Point(405, 0);
+            this.nbcOpciones.Location = new System.Drawing.Point(813, 19);
             this.nbcOpciones.Name = "nbcOpciones";
             this.nbcOpciones.NavigationPaneGroupClientHeight = 320;
             this.nbcOpciones.OptionsNavPane.ExpandedWidth = 160;
-            this.nbcOpciones.Size = new System.Drawing.Size(160, 567);
+            this.nbcOpciones.Size = new System.Drawing.Size(160, 431);
             this.nbcOpciones.TabIndex = 1;
             this.nbcOpciones.TabStop = true;
             this.nbcOpciones.Text = "navBarControl1";
@@ -351,7 +299,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.sbEliminar);
             this.navBarGroupControlContainer1.Controls.Add(this.sbModificar);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(156, 465);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(156, 329);
             this.navBarGroupControlContainer1.TabIndex = 1;
             this.navBarGroupControlContainer1.TabStop = true;
             // 
@@ -438,28 +386,47 @@
             this.sbModificar.TabIndex = 1;
             this.sbModificar.Text = "GUARDAR";
             // 
-            // radPanel1
+            // groupControl1
             // 
-            this.radPanel1.Controls.Add(this.radGroupBox1);
-            this.radPanel1.Controls.Add(this.gcEstacionTrabajo);
-            this.radPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radPanel1.Location = new System.Drawing.Point(0, 0);
-            this.radPanel1.Name = "radPanel1";
-            this.radPanel1.Size = new System.Drawing.Size(405, 567);
-            this.radPanel1.TabIndex = 0;
+            this.groupControl1.Controls.Add(this.gcEstacionTrabajo);
+            this.groupControl1.Controls.Add(this.txtDescripcion);
+            this.groupControl1.Controls.Add(this.nbcOpciones);
+            this.groupControl1.Controls.Add(this.txtNroMaqRegistradora);
+            this.groupControl1.Controls.Add(this.cbEstado);
+            this.groupControl1.Controls.Add(this.txtNroAutenticacion);
+            this.groupControl1.Controls.Add(this.rddlImpresora);
+            this.groupControl1.Controls.Add(this.txtProducto);
+            this.groupControl1.Controls.Add(this.cbExcepcion);
+            this.groupControl1.Controls.Add(this.txtPiePagina);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.txtSerieBoleta);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.txtSerieFactura);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.lblID);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(975, 452);
+            this.groupControl1.TabIndex = 1;
+            this.groupControl1.Text = "groupControl1";
             // 
             // Seg_EstacionTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 567);
-            this.Controls.Add(this.radPanel1);
-            this.Controls.Add(this.nbcOpciones);
+            this.ClientSize = new System.Drawing.Size(975, 452);
+            this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(565, 572);
+            this.MaximumSize = new System.Drawing.Size(975, 452);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(565, 567);
+            this.MinimumSize = new System.Drawing.Size(565, 452);
             this.Name = "Seg_EstacionTrabajo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ESTACION DE TRABAJO";
@@ -469,9 +436,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNroMaqRegistradora)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcEstacionTrabajo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvEstacionTrabajo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
-            this.radGroupBox1.ResumeLayout(false);
-            this.radGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cbEstado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rddlImpresora)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbExcepcion)).EndInit();
@@ -482,8 +446,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nbcOpciones)).EndInit();
             this.nbcOpciones.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
-            this.radPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -493,7 +458,6 @@
         private Telerik.WinControls.UI.RadTextBox txtDescripcion;
         private Telerik.WinControls.UI.RadTextBox txtNroAutenticacion;
         private Telerik.WinControls.UI.RadTextBox txtNroMaqRegistradora;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private DevExpress.XtraNavBar.NavBarControl nbcOpciones;
         private DevExpress.XtraNavBar.NavBarGroup nbgMail;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
@@ -515,10 +479,10 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadCheckBox cbExcepcion;
         private DevExpress.XtraEditors.LabelControl lblID;
         private Telerik.WinControls.UI.RadDropDownList rddlImpresora;
         private Telerik.WinControls.UI.RadCheckBox cbEstado;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
     }
 }

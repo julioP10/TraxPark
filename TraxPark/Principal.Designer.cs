@@ -259,7 +259,7 @@
             this.ribPagConex,
             this.ribPagVentana});
             this.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbonControl.Size = new System.Drawing.Size(1364, 184);
+            this.ribbonControl.Size = new System.Drawing.Size(1370, 179);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             this.ribbonControl.Toolbar.ItemLinks.Add(this.barButtonItem1);
             this.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
@@ -614,10 +614,10 @@
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.bsiEmpresa);
             this.ribbonStatusBar.ItemLinks.Add(this.bsiUsuario);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 736);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 738);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1364, 27);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1370, 25);
             // 
             // lbarEmpresa
             // 
@@ -1614,7 +1614,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Glass Oceans";
             // 
             // popupMenu1
             // 
@@ -1647,7 +1647,7 @@
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1364, 763);
+            this.ClientSize = new System.Drawing.Size(1370, 763);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ribbonStatusBar);
